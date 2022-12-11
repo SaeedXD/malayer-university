@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دانشگاه ملی ملایر</title>
+  <link rel="shortcut icon" href="assets/picture/favicon.ico" type="image/x-icon">
+  <script src="assets/js/tailwind.js"></script>
+  <script src="assets/js/aws.js"></script>
+  <script src="assets/js/jquery.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vazir-font/30.1.0/font-face.css" integrity="sha512-ZHFuHiK3EA1uh2tx7nB0j9HyXR/IAFW24KVNFGjY8QIjtDKHmcowjUyObXF40wYrG25+kECHEbH8rL+HbvRwYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/font/autoLoad.php" />
+  <link rel="stylesheet" href="assets/css/helper.css" />
+</head>
+
+<body class="xbg-1" oncontextmenu="return false;">
+
+  <header id="header" class="fixed top-0 z-50 w-full bg-zinc-900/80 backdrop-blur body-font shadow-lg shadow-black pt-8 md:pt-0 mb-16">
+    <div class="absulote top-0 xbg-3 w-full flex items-center justify-center py-2 text-3xl text-gray-200 hidden" dir="rtl">
+      <span class="font-bold" style="font-family: ghasem;filter: drop-shadow(0 0 7px #13131aee);">عید غدیر مبارک</span>
+    </div>
+    <!-- <span class="absolute top-0 w-full h-1.5 bg-gradient-to-b from-indigo-700 to-transparent"></span> -->
+    <div id="header-box" class="container mx-auto flex flex-wrap px-5 py-3 flex-col md:flex-row items-center" dir="rtl">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="#">
+        <div id="logoA" class="bg-gradient-to-t from-[#2c2cf366] to-[#00000000] backdrop-blur border-[1px] border-gray-500 w-16 h-16 rounded-xl flex items-center justify-center">
+          <img alt="" zoomImg="disable" src="assets/picture/ML.png" class="w-10/12 opacity-80" style="filter: drop-shadow(0 0 10px #070423);">
+          <div class="absolute w-full h-full rounded-xl logo-animate-1"></div>
+          <div class="absolute w-full h-full rounded-xl logo-animate-2"></div>
+          <div class="absolute w-full h-full rounded-xl logo-animate-3"></div>
+        </div>
+        <span class="w-fit mr-4 mt-5 text-gray-300 text-4xl" style="font-family: nastaliq;filter: drop-shadow(0 0 5px #2416a8);">دانشگاه ملی ملایر</span>
+      </a>
+      <nav class="hidden xl:block relative text-gray-400 md:mr-10 md:py-1 md:pr-1 mt-3 md:border-r md:border-gray-500 flex flex-row flex-wrap items-center text-base justify-center" style="font-family: vazir;">
+        <div class="dd">
+          <span class="hover:text-gray-200 text-lg">دانشگاه</span>
+          <div class="dd-hb p-2">
+            <div class="dd-sb py-2">
+              <div class="dd-dl">
+                <span class="dd-dl-t hover:text-gray-200 text-sm px-3 py-3">دانشگاه</span>
+                <div class="dd-dl-hb p-2">
+                  <div class="dd-dl-sb p-2">
+                    <a href="#" class="dd-link">بنیاد خیرین دانشگاه ملایر <span></span></a>
+                    <a href="#" class="dd-link">مدیریت سبز در دانشگاه ملایر<span></span></a>
+                    <a href="#" class="dd-link">مرکز آموزشهای آزاد<span></span></a>
+                    <a href="#" class="dd-link">ستاد برگزاری آزمون های سازمان سنجش<span></span></a>
+                    <a href="#" class="dd-link">مشاور امور زنان و خانواده<span></span></a>
+                    <a href="#" class="dd-link">ارتباط مستقیم با رابط حقوق شهروندی<span></span></a>
+                    <a href="#" class="dd-link">درباره دانشگاه<span></span></a>
+                    <a href="#" class="dd-link">درباره شهر ملایر<span></span></a>
+                    <a href="#" class="dd-link">نظرسنجی<span></span></a>
+                    <a href="#" class="dd-link">رسیدگی به شکایات<span></span></a>
+                  </div>
+                </div>
+              </div>
+              <span class="custom-hr opacity-70"></span>
+              <div class="dd-dl">
+                <span class="dd-dl-t hover:text-gray-200 text-sm px-3 py-3">حوزه ریاست</span>
+                <div class="dd-dl-hb p-2">
+                  <div class="dd-dl-sb p-2">
+                    <a href="#" class="dd-link">ریاست<span></span></a>
+                    <a href="#" class="dd-link">دفتر ریاست و روابط عمومی<span></span></a>
+                    <a href="#" class="dd-link">مدیریت امور بین الملل و دفتر سرپرستی دانشجویان غیرایرانی<span></span></a>
+                    <a href="#" class="dd-link">مدیریت طرح و برنامه<span></span></a>
+                    <a href="#" class="dd-link">مدیریت حراست<span></span></a>
+                    <a href="#" class="dd-link">مدیریت امور حقوقی<span></span></a>
+                    <a href="#" class="dd-link">اداره شاهد و ایثارگر<span></span></a>
+                    <a href="#" class="dd-link">دبیرخانه هیئت اجرایی جذب<span></span></a>
+                    <a href="#" class="dd-link">دفتر طرح های عمرانی<span></span></a>
+                    <a href="#" class="dd-link">گروه نظارت،ارزیابی و تضمین کیفیت<span></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dd">
+          <span class="hover:text-gray-200 text-lg">معاونت ها</span>
+          <div class="dd-hb p-2">
+            <div class="dd-sb py-2">
+              <div class="dd-dl">
+                <span class="dd-dl-t hover:text-gray-200 text-sm px-3 py-3">معاونت توسعه و پشتیبانی</span>
+                <div class="dd-dl-hb p-2">
+                  <div class="dd-dl-sb p-2">
+                    <a href="#" class="dd-link">معاونت توسعه و پشتیبانی<span></span></a>
+                    <a href="#" class="dd-link">مدیریت امور اداری و پشتیبانی<span></span></a>
+                    <a href="#" class="dd-link">مدیریت امور مالی<span></span></a>
+                    <a href="#" class="dd-link">لیست تلفن های حوزه توسعه و پشتیبانی<span></span></a>
+                  </div>
+                </div>
+              </div>
+              <span class="custom-hr opacity-70"></span>
+              <div class="dd-dl">
+                <span class="dd-dl-t hover:text-gray-200 text-sm px-3 py-3">معاونت آموزشی و تحصیلات تکمیلی</span>
+                <div class="dd-dl-hb p-2">
+                  <div class="dd-dl-sb p-2">
+                    <a href="#" class="dd-link">معاونت آموزشی و تحصیلات تکمیلی<span></span></a>
+                    <a href="#" class="dd-link">اداره تحصیلات تکمیلی<span></span></a>
+                    <a href="#" class="dd-link">اداره آموزش<span></span></a>
+                    <a href="#" class="dd-link">دفتر استعدادهای درخشان<span></span></a>
+                    <a href="#" class="dd-link">گروه برنامه ریزی آموزشی<span></span></a>
+                    <a href="#" class="dd-link">اعضای هیأت علمی<span></span></a>
+                    <a href="#" class="dd-link">گروه های آموزشی<span></span></a>
+                    <a href="#" class="dd-link">رشته های آموزشی<span></span></a>
+                    <a href="#" class="dd-link">لیست تلفن های حوزه آموزشی و تحصیلات تکمیلی<span></span></a>
+                  </div>
+                </div>
+              </div>
+              <span class="custom-hr opacity-70"></span>
+              <div class="dd-dl">
+                <span class="dd-dl-t hover:text-gray-200 text-sm px-3 py-3">معاونت پژوهشی و فناوری</span>
+                <div class="dd-dl-hb p-2">
+                  <div class="dd-dl-sb p-2">
+                    <a href="#" class="dd-link">معاونت پژوهشی و فناوری<span></span></a>
+                    <a href="#" class="dd-link">مدیریت امور پژوهشی<span></span></a>
+                    <a href="#" class="dd-link">کتابخانه مرکزی، مرکز اطلاع رسانی و انتشارات علمی<span></span></a>
+                    <a href="#" class="dd-link">مرکز فناوری اطلاعات (IT)<span></span></a>
+                    <a href="#" class="dd-link">گروه کارآفرینی و ارتباط با صنعت<span></span></a>
+                    <a href="#" class="dd-link">آزمایشگاهها و کارگاهها<span></span></a>
+                    <a href="#" class="dd-link">کمیته ایمنی، بهداشت و محیط زیست<span></span></a>
+                    <a href="#" class="dd-link">لیست تلفن های حوزه پژوهشی و فناوری<span></span></a>
+                  </div>
+                </div>
+              </div>
+              <span class="custom-hr opacity-70"></span>
+              <div class="dd-dl">
+                <span class="dd-dl-t hover:text-gray-200 text-sm px-3 py-3">معاونت فرهنگی و اجتماعی</span>
+                <div class="dd-dl-hb p-2">
+                  <div class="dd-dl-sb p-2">
+                    <a href="#" class="dd-link">معاونت فرهنگی و اجتماعی<span></span></a>
+                    <a href="#" class="dd-link">مدیریت برنامه ریزی فرهنگی و اجتماعی<span></span></a>
+                    <a href="#" class="dd-link">گروه حمایت و پشتیبانی فرهنگی و اجتماعی<span></span></a>
+                    <a href="#" class="dd-link">لیست تلفن های حوزه فرهنگی و اجتماعی<span></span></a>
+                  </div>
+                </div>
+              </div>
+              <span class="custom-hr opacity-70"></span>
+              <div class="dd-dl">
+                <span class="dd-dl-t hover:text-gray-200 text-sm px-3 py-3">معاونت دانشجویی</span>
+                <div class="dd-dl-hb p-2">
+                  <div class="dd-dl-sb p-2">
+                    <a href="#" class="dd-link">معاونت دانشجویی<span></span></a>
+                    <a href="#" class="dd-link">مدیریت امور دانشجویی<span></span></a>
+                    <a href="#" class="dd-link">مرکز مشاوره دانشجویی<span></span></a>
+                    <a href="#" class="dd-link">اداره تربیت بدنی<span></span></a>
+                    <a href="#" class="dd-link">پوشش دانشگاه<span></span></a>
+                    <a href="#" class="dd-link">خوابگاه های خودگردان دانشگاه<span></span></a>
+                    <a href="#" class="dd-link">لیست تلفن های حوزه دانشجویی<span></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dd">
+          <span class="hover:text-gray-200 text-lg">دانشکده ها و پژوهشکده ها</span>
+          <div class="dd-hb p-2">
+            <div class="dd-sb py-2">
+              <div class="dd-dl">
+                <span class="dd-dl-t hover:text-gray-200 text-sm px-3 py-3">دانشکده ها</span>
+                <div class="dd-dl-hb p-2">
+                  <div class="dd-dl-sb p-2">
+                    <a href="#" class="dd-link">دانشکده علوم پایه<span></span></a>
+                    <a href="#" class="dd-link">دانشکده علوم ریاضی و آمار<span></span></a>
+                    <a href="#" class="dd-link">دانشکده عمران و معماری<span></span></a>
+                    <a href="#" class="dd-link">دانشکده فنی و مهندسی<span></span></a>
+                    <a href="#" class="dd-link">دانشکده منابع طبیعی و محیط زیست<span></span></a>
+                    <a href="#" class="dd-link">دانشکده کشاورزی<span></span></a>
+                    <a href="#" class="dd-link">دانشکده ادبیات و علوم انسانی<span></span></a>
+                  </div>
+                </div>
+              </div>
+              <span class="custom-hr opacity-70"></span>
+              <div class="dd-dl">
+                <span class="dd-dl-t hover:text-gray-200 text-sm px-3 py-3">پژوهشکده ها</span>
+                <div class="dd-dl-hb p-2">
+                  <div class="dd-dl-sb p-2">
+                    <a href="#" class="dd-link">پژوهشکده انگور و کشمش<span></span></a>
+                    <a href="#" class="dd-link">مرکز مطالعات نانو<span></span></a>
+                    <a href="#" class="dd-link">مرکز پرتودهی گاما و الکترون<span></span></a>
+                    <a href="#" class="dd-link">مرکز تحقیقات فرآوری لیزری مواد<span></span></a>
+                    <a href="#" class="dd-link">مرکز تحقیقات پیشرفته مبل و منبت<span></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dd">
+          <span class="hover:text-gray-200 text-lg">اشخاص</span>
+          <div class="dd-hb p-2">
+            <div class="dd-sb py-2">
+              <div class="dd-dl">
+                <span class="dd-dl-t hover:text-gray-200 text-sm px-3 py-3">مسئولین دانشگاه</span>
+                <div class="dd-dl-hb p-2">
+                  <div class="dd-dl-sb p-2">
+                    <a href="#" class="dd-link">رئیس دانشگاه<span></span></a>
+                    <a href="#" class="dd-link">معاون توسعه و پشتیبانی<span></span></a>
+                    <a href="#" class="dd-link">معاون آموزشی و تحصیلات تکمیلی<span></span></a>
+                    <a href="#" class="dd-link">معاون پژوهشی و فناوری<span></span></a>
+                    <a href="#" class="dd-link">معاون فرهنگی و اجتماعی<span></span></a>
+                    <a href="#" class="dd-link">معاون دانشجویی<span></span></a>
+                  </div>
+                </div>
+              </div>
+              <span class="custom-hr opacity-70"></span>
+              <div class="dd-dl">
+                <span class="dd-dl-t hover:text-gray-200 text-sm px-3 py-3">روسای دانشکده ها</span>
+                <div class="dd-dl-hb p-2">
+                  <div class="dd-dl-sb p-2">
+                    <a href="#" class="dd-link">رئیس دانشکده علوم پایه<span></span></a>
+                    <a href="#" class="dd-link">رئیس دانشکده علوم ریاضی و آمار<span></span></a>
+                    <a href="#" class="dd-link">رئیس دانشکده عمران و معماری<span></span></a>
+                    <a href="#" class="dd-link">رئیس دانشکده فنی و مهندسی<span></span></a>
+                    <a href="#" class="dd-link">رئیس دانشکده منابع طبیعی و محیط زیست<span></span></a>
+                    <a href="#" class="dd-link">رئیس دانشکده کشاورزی<span></span></a>
+                    <a href="#" class="dd-link">رئیس دانشکده ادبیات و علوم انسانی<span></span></a>
+                  </div>
+                </div>
+              </div>
+              <span class="custom-hr opacity-70"></span>
+              <div class="dd-dl">
+                <span class="dd-dl-t hover:text-gray-200 text-sm px-3 py-3">اعضای هیأت علمی</span>
+                <div class="dd-dl-hb p-2">
+                  <div class="dd-dl-sb p-2">
+                    <a href="#" class="dd-link">لیست کامل اعضای هیأت علمی<span></span></a>
+                    <a href="#" class="dd-link">اعضای هیأت علمی دانشکده علوم پایه<span></span></a>
+                    <a href="#" class="dd-link">اعضای هیأت علمی دانشکده آمار و ریاضی<span></span></a>
+                    <a href="#" class="dd-link">اعضای هیأت علمی دانشکده عمران و معماری<span></span></a>
+                    <a href="#" class="dd-link">اعضای هیأت علمی دانشکده فنی و مهندسی<span></span></a>
+                    <a href="#" class="dd-link">اعضای هیأت علمی دانشکده منابع طبیعی و محیط زیست<span></span></a>
+                    <a href="#" class="dd-link">اعضای هیأت علمی دانشکده کشاورزی<span></span></a>
+                    <a href="#" class="dd-link">اعضای هیأت علمی دانشکده ادبیات و علوم انسانی<span></span></a>
+                  </div>
+                </div>
+              </div>
+              <span class="custom-hr opacity-70"></span>
+              <div class="dd-dl">
+                <span class="dd-dl-t hover:text-gray-200 text-sm px-3 py-3">کارکنان</span>
+                <div class="dd-dl-hb p-2">
+                  <div class="dd-dl-sb p-2">
+                    <a href="#" class="dd-link">کارکنان حوزه ریاست<span></span></a>
+                    <a href="#" class="dd-link">کارکنان حوزه معاونت توسعه و پشتیبانی<span></span></a>
+                    <a href="#" class="dd-link">کارکنان حوزه معاونت آموزشی و تحصیلات تکمیلی<span></span></a>
+                    <a href="#" class="dd-link">کارکنان حوزه معاونت پژوهشی و فناوری<span></span></a>
+                    <a href="#" class="dd-link">کارکنان حوزه معاونت فرهنگی و اجتماعی<span></span></a>
+                    <a href="#" class="dd-link">کارکنان حوزه معاونت دانشجویی<span></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dd">
+          <span class="hover:text-gray-200 text-lg">سامانه ها</span>
+          <div class="dd-hb p-2">
+            <div class="dd-sb py-2">
+              <div class="dd-dl">
+                <span class="dd-dl-t hover:text-gray-200 text-sm px-3 py-3">سامانه های هیأت علمی</span>
+                <div class="dd-dl-hb p-2">
+                  <div class="dd-dl-sb p-2">
+                    <a href="#" class="dd-link">سامانه مدیریت اطلاعات پژوهشی<span></span></a>
+                    <a href="#" class="dd-link">صندوق پست الکترونیک اعضای هیأت علمی<span></span></a>
+                    <a href="#" class="dd-link">صندوق پست الکترونیک قدیم اعضای هیأت علمی<span></span></a>
+                    <a href="#" class="dd-link">سامانه نشریات<span></span></a>
+                    <a href="#" class="dd-link">سامانه آموزش<span></span></a>
+                    <a href="#" class="dd-link">سامانه حقوق و دستمزد<span></span></a>
+                    <a href="#" class="dd-link">سامانه تامین مقالات<span></span></a>
+                    <a href="#" class="dd-link">مرکز پردازش محاسبات دانشگاه ملایر<span></span></a>
+                    <a href="#" class="dd-link">سامانه آموزش مجازی دانشگاه ملایر<span></span></a>
+                  </div>
+                </div>
+              </div>
+              <span class="custom-hr opacity-70"></span>
+              <div class="dd-dl">
+                <span class="dd-dl-t hover:text-gray-200 text-sm px-3 py-3">سامانه های دانشجویی</span>
+                <div class="dd-dl-hb p-2">
+                  <div class="dd-dl-sb p-2">
+                    <a href="#" class="dd-link">سامانه آموزش<span></span></a>
+                    <a href="#" class="dd-link">سامانه آموزش مجازی دانشگاه ملایر<span></span></a>
+                    <a href="#" class="dd-link">سامانه تغذیه<span></span></a>
+                    <a href="#" class="dd-link">سامانه خدمات الکترونيک دانشجويي دانشگاه ملاير(بوستان)<span></span></a>
+                    <a href="#" class="dd-link">سامانه کتابخانه<span></span></a>
+                    <a href="#" class="dd-link">سامانه پرداخت الکترونیکی دانشگاه ملایر<span></span></a>
+                    <a href="#" class="dd-link">صندوق پست الکترونیک دانشجویان تحصیلات تکمیلی<span></span></a>
+                    <a href="#" class="dd-link">سامانه تامین مقالات<span></span></a>
+                    <a href="#" class="dd-link">سامانه های تکریم دانشجویی<span></span></a>
+                    <a href="#" class="dd-link">سامانه مدیریتی امور فرهنگی دانشگاه ملایر<span></span></a>
+                    <a href="#" class="dd-link">سامانه صندوق مهر دانشگاه ملایر<span></span></a>
+                  </div>
+                </div>
+              </div>
+              <span class="custom-hr opacity-70"></span>
+              <div class="dd-dl">
+                <span class="dd-dl-t hover:text-gray-200 text-sm px-3 py-3">سامانه های کارکنان</span>
+                <div class="dd-dl-hb p-2">
+                  <div class="dd-dl-sb p-2">
+                    <a href="#" class="dd-link">سامانه حقوق و دستمزد<span></span></a>
+                    <a href="#" class="dd-link">سامانه حضور و غیاب<span></span></a>
+                    <a href="#" class="dd-link">سامانه اتوماسیون اداری-خارجی<span></span></a>
+                    <a href="#" class="dd-link">سامانه اتوماسیون اداری-داخلی<span></span></a>
+                    <a href="#" class="dd-link">سامانه نظام پیشنهادات<span></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="flex items-center justify-center text-gray-400 md:ml-auto md:mr-6 md:py-1 md:pr-1 mt-3">
+        <span class="h-8 w-0.5 bg-gray-600 ml-4 hidden md:block xl:hidden"></span>
+        <span class="group ml-4 hover:text-gray-200 text-lg xl:hidden" style="font-family: vazir;" onclick="openLinksMenu()"><i class="fas fa-link ml-1 text-sm animate-plus"></i>پیوند ها</span>
+        <form action="#search.url" method="post" autocomplete="off" class="group relative flex items-center justify-center">
+          <input type="search" id="default-search" class="block w-[38px] p-[8px] valid:pl-9 group-hover:w-40 focus:w-40 valid:w-40 text-xs rounded-lg border border-gray-700 placeholder-gray-400 text-white outline-none" style="background: linear-gradient(135deg, #aaaaaa44, #00000000); font-family: sudan;" placeholder="جست و جو کنید..." required>
+          <button type="submit" class="absolute left-1 font-medium rounded-lg text-sm px-1.5 py-1 bg-indigo-700 hover:bg-blue-800 pointer-events-none group-hover:pointer-events-auto">
+            <svg aria-hidden="true" class="w-[18px] h-[18px] text-gray-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          </button>
+        </form>
+      </nav>
+
+      <img alt="" zoomImg="disable" class="inline-flex items-center h-20 px-3 hidden lg:block" style="filter: drop-shadow(0 0 0.57rem #ffe48a);" src="assets/picture/yearname.png">
+    </div>
+  </header>
+
+  <div id="linksMenu">
+    <div class="linksMenu-head"><i class="fas fa-times" onclick="closeLinksMenu()"></i> پیوندهای دانشگاه</div>
+    <div id="TreeView" dir="rtl">
+      <div>
+        <span class="tv-caret"><svg class="ham" viewBox="0 0 100 100"><path d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" /><path d="m 70,50 h -40" /><path d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" /></svg>دانشگاه</span>
+        <div class="tv-parentboxs">
+          <div class="tv-nested">
+            <div>
+              <span class="tv-head">دانشگاه</span>
+              <div class="tv-linkbox">
+                <a href="#">بنیاد خیرین دانشگاه ملایر</a>
+                <a href="#">مدیریت سبز در دانشگاه ملایر</a>
+                <a href="#">مرکز آموزشهای آزاد</a>
+                <a href="#">ستاد برگزاری آزمون های سازمان سنجش</a>
+                <a href="#">مشاور امور زنان و خانواده</a>
+                <a href="#">ارتباط مستقیم با رابط حقوق شهروندی</a>
+                <a href="#">درباره دانشگاه</a>
+                <a href="#">درباره شهر ملایر</a>
+                <a href="#">نظرسنجی</a>
+                <a href="#">رسیدگی به شکایات</a>
+              </div>
+            </div>
+            <div>
+              <span class="tv-head">حوزه ریاست</span>
+              <div class="tv-linkbox">
+                <a href="#">ریاست</a>
+                <a href="#">دفتر ریاست و روابط عمومی</a>
+                <a href="#">مدیریت امور بین الملل و دفتر سرپرستی دانشجویان غیرایرانی</a>
+                <a href="#">مدیریت طرح و برنامه</a>
+                <a href="#">مدیریت حراست</a>
+                <a href="#">مدیریت امور حقوقی</a>
+                <a href="#">اداره شاهد و ایثارگر</a>
+                <a href="#">دبیرخانه هیئت اجرایی جذب</a>
+                <a href="#">دفتر طرح های عمرانی</a>
+                <a href="#">گروه نظارت،ارزیابی و تضمین کیفیت</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="tv-caret"><svg class="ham" viewBox="0 0 100 100"><path d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" /><path d="m 70,50 h -40" /><path d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" /></svg>معاونت ها</span>
+        <div class="tv-parentboxs">
+          <div class="tv-nested">
+            <div>
+              <span class="tv-head">معاونت توسعه و پشتیبانی</span>
+              <div class="tv-linkbox">
+                <a href="#">معاونت توسعه و پشتیبانی</a>
+                <a href="#">مدیریت امور اداری و پشتیبانی</a>
+                <a href="#">مدیریت امور مالی</a>
+                <a href="#">لیست تلفن های حوزه توسعه و پشتیبانی</a>
+              </div>
+            </div>
+            <div>
+              <span class="tv-head">معاونت آموزشی و تحصیلات تکمیلی</span>
+              <div class="tv-linkbox">
+                <a href="#">معاونت آموزشی و تحصیلات تکمیلی</a>
+                <a href="#">اداره تحصیلات تکمیلی</a>
+                <a href="#">اداره آموزش</a>
+                <a href="#">دفتر استعدادهای درخشان</a>
+                <a href="#">گروه برنامه ریزی آموزشی</a>
+                <a href="#">اعضای هیأت علمی</a>
+                <a href="#">گروه های آموزشی</a>
+                <a href="#">رشته های آموزشی</a>
+                <a href="#">لیست تلفن های حوزه آموزشی و تحصیلات تکمیلی</a>
+              </div>
+            </div>
+            <div>
+              <span class="tv-head">معاونت پژوهشی و فناوری</span>
+              <div class="tv-linkbox">
+                <a href="#">معاونت پژوهشی و فناوری</a>
+                <a href="#">مدیریت امور پژوهشی</a>
+                <a href="#">کتابخانه مرکزی، مرکز اطلاع رسانی و انتشارات علمی</a>
+                <a href="#">مرکز فناوری اطلاعات (IT)</a>
+                <a href="#">گروه کارآفرینی و ارتباط با صنعت</a>
+                <a href="#">آزمایشگاهها و کارگاهها</a>
+                <a href="#">کمیته ایمنی، بهداشت و محیط زیست</a>
+                <a href="#">لیست تلفن های حوزه پژوهشی و فناوری</a>
+              </div>
+            </div>
+            <div>
+              <span class="tv-head">معاونت فرهنگی و اجتماعی</span>
+              <div class="tv-linkbox">
+                <a href="#">معاونت فرهنگی و اجتماعی</a>
+                <a href="#">مدیریت برنامه ریزی فرهنگی و اجتماعی</a>
+                <a href="#">گروه حمایت و پشتیبانی فرهنگی و اجتماعی</a>
+                <a href="#">لیست تلفن های حوزه فرهنگی و اجتماعی</a>
+              </div>
+            </div>
+            <div>
+              <span class="tv-head">معاونت دانشجویی</span>
+              <div class="tv-linkbox">
+                <a href="#">معاونت دانشجویی</a>
+                <a href="#">مدیریت امور دانشجویی</a>
+                <a href="#">مرکز مشاوره دانشجویی</a>
+                <a href="#">اداره تربیت بدنی</a>
+                <a href="#">پوشش دانشگاه</a>
+                <a href="#">خوابگاه های خودگردان دانشگاه</a>
+                <a href="#">لیست تلفن های حوزه دانشجویی</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="tv-caret"><svg class="ham" viewBox="0 0 100 100"><path d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" /><path d="m 70,50 h -40" /><path d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" /></svg>دانشکده ها و پژوهشکده ها</span>
+        <div class="tv-parentboxs">
+          <div class="tv-nested">
+            <div>
+              <span class="tv-head">دانشکده ها</span>
+              <div class="tv-linkbox">
+                <a href="#">دانشکده علوم پایه</a>
+                <a href="#">دانشکده علوم ریاضی و آمار</a>
+                <a href="#">دانشکده عمران و معماری</a>
+                <a href="#">دانشکده فنی و مهندسی</a>
+                <a href="#">دانشکده منابع طبیعی و محیط زیست</a>
+                <a href="#">دانشکده کشاورزی</a>
+                <a href="#">دانشکده ادبیات و علوم انسانی</a>
+              </div>
+            </div>
+            <div>
+              <span class="tv-head">پژوهشکده ها</span>
+              <div class="tv-linkbox">
+                <a href="#">پژوهشکده انگور و کشمش</a>
+                <a href="#">مرکز مطالعات نانو</a>
+                <a href="#">مرکز پرتودهی گاما و الکترون</a>
+                <a href="#">مرکز تحقیقات فرآوری لیزری مواد</a>
+                <a href="#">مرکز تحقیقات پیشرفته مبل و منبت</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="tv-caret"><svg class="ham" viewBox="0 0 100 100"><path d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" /><path d="m 70,50 h -40" /><path d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" /></svg>اشخاص</span>
+        <div class="tv-parentboxs">
+        <div class="tv-nested">
+          <div>
+            <span class="tv-head">مسئولین دانشگاه</span>
+            <div class="tv-linkbox">
+              <a href="#">رئیس دانشگاه</a>
+              <a href="#">معاون توسعه و پشتیبانی</a>
+              <a href="#">معاون آموزشی و تحصیلات تکمیلی</a>
+              <a href="#">معاون پژوهشی و فناوری</a>
+              <a href="#">معاون فرهنگی و اجتماعی</a>
+              <a href="#">معاون دانشجویی</a>
+            </div>
+          </div>
+          <div>
+            <span class="tv-head">روسای دانشکده ها</span>
+            <div class="tv-linkbox">
+              <a href="#">رئیس دانشکده علوم پایه</a>
+              <a href="#">رئیس دانشکده علوم ریاضی و آمار</a>
+              <a href="#">رئیس دانشکده عمران و معماری</a>
+              <a href="#">رئیس دانشکده فنی و مهندسی</a>
+              <a href="#">رئیس دانشکده منابع طبیعی و محیط زیست</a>
+              <a href="#">رئیس دانشکده کشاورزی</a>
+              <a href="#">رئیس دانشکده ادبیات و علوم انسانی</a>
+            </div>
+          </div>
+          <div>
+            <span class="tv-head">اعضای هیأت علمی</span>
+            <div class="tv-linkbox">
+              <a href="#">لیست کامل اعضای هیأت علمی</a>
+              <a href="#">اعضای هیأت علمی دانشکده علوم پایه</a>
+              <a href="#">اعضای هیأت علمی دانشکده آمار و ریاضی</a>
+              <a href="#">اعضای هیأت علمی دانشکده عمران و معماری</a>
+              <a href="#">اعضای هیأت علمی دانشکده فنی و مهندسی</a>
+              <a href="#">اعضای هیأت علمی دانشکده منابع طبیعی و محیط زیست</a>
+              <a href="#">اعضای هیأت علمی دانشکده کشاورزی</a>
+              <a href="#">اعضای هیأت علمی دانشکده ادبیات و علوم انسانی</a>
+            </div>
+          </div>
+          <div>
+            <span class="tv-head">کارکنان</span>
+            <div class="tv-linkbox">
+              <a href="#">کارکنان حوزه ریاست</a>
+              <a href="#">کارکنان حوزه معاونت توسعه و پشتیبانی</a>
+              <a href="#">کارکنان حوزه معاونت آموزشی و تحصیلات تکمیلی</a>
+              <a href="#">کارکنان حوزه معاونت پژوهشی و فناوری</a>
+              <a href="#">کارکنان حوزه معاونت فرهنگی و اجتماعی</a>
+              <a href="#">کارکنان حوزه معاونت دانشجویی</a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div>
+        <span class="tv-caret"><svg class="ham" viewBox="0 0 100 100"><path d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" /><path d="m 70,50 h -40" /><path d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" /></svg>سامانه ها</span>
+        <div class="tv-parentboxs">
+        <div class="tv-nested">
+          <div>
+            <span class="tv-head">سامانه های هیأت علمی</span>
+            <div class="tv-linkbox">
+              <a href="#">سامانه مدیریت اطلاعات پژوهشی</a>
+              <a href="#">صندوق پست الکترونیک اعضای هیأت علمی</a>
+              <a href="#">صندوق پست الکترونیک قدیم اعضای هیأت علمی</a>
+              <a href="#">سامانه نشریات</a>
+              <a href="#">سامانه آموزش</a>
+              <a href="#">سامانه حقوق و دستمزد</a>
+              <a href="#">سامانه تامین مقالات</a>
+              <a href="#">مرکز پردازش محاسبات دانشگاه ملایر</a>
+              <a href="#">سامانه آموزش مجازی دانشگاه ملایر</a>
+            </div>
+          </div>
+          <div>
+            <span class="tv-head">سامانه های دانشجویی</span>
+            <div class="tv-linkbox">
+              <a href="#">سامانه آموزش</a>
+              <a href="#">سامانه آموزش مجازی دانشگاه ملایر</a>
+              <a href="#">سامانه تغذیه</a>
+              <a href="#">سامانه خدمات الکترونيک دانشجويي دانشگاه ملاير(بوستان)</a>
+              <a href="#">سامانه کتابخانه</a>
+              <a href="#">سامانه پرداخت الکترونیکی دانشگاه ملایر</a>
+              <a href="#">صندوق پست الکترونیک دانشجویان تحصیلات تکمیلی</a>
+              <a href="#">سامانه تامین مقالات</a>
+              <a href="#">سامانه های تکریم دانشجویی</a>
+              <a href="#">سامانه مدیریتی امور فرهنگی دانشگاه ملایر</a>
+              <a href="#">سامانه صندوق مهر دانشگاه ملایر</a>
+            </div>
+          </div>
+          <div>
+            <span class="tv-head">سامانه های کارکنان</span>
+            <div class="tv-linkbox">
+              <a href="#">سامانه حقوق و دستمزد</a>
+              <a href="#">سامانه حضور و غیاب</a>
+              <a href="#">سامانه اتوماسیون اداری-خارجی</a>
+              <a href="#">سامانه اتوماسیون اداری-داخلی</a>
+              <a href="#">سامانه نظام پیشنهادات</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative z-20 text-gray-600 body-font container flex flex-col w-full px-5 md:px-16 py-8 mx-auto">
+      <div id="imageSlider" class="relative rounded-2xl w-full shadow-[0_10px_25px_10px_rgba(0,0,0,0.9)] overflow-hidden">
+        <img class="object-cover object-center h-auto w-full rounded-2xl opacity-0" src="https://malayeru.ac.ir/Picture/ShowObjectPicture.aspx?&ObjectType=ALBUM&ObjectID=3d4cc735-9262-4f76-9332-3398bd7f3857" alt="دانشگاه">
+        <img class="object-cover object-center h-auto w-full rounded-2xl opacity-0" src="https://malayeru.ac.ir/Picture/ShowObjectPicture.aspx?&ObjectType=ALBUM&ObjectID=da4f3ec4-2ac8-41e2-9dbe-46280b93f21b" alt="دانشگاه">
+        <img class="object-cover object-center h-auto w-full rounded-2xl opacity-0" src="https://malayeru.ac.ir/Picture/ShowObjectPicture.aspx?&ObjectType=ALBUM&ObjectID=e180aa93-eb76-4aee-99a1-8d63f010c308" alt="دانشگاه">
+        <img class="object-cover object-center h-auto w-full rounded-2xl opacity-0" src="https://malayeru.ac.ir/Picture/ShowObjectPicture.aspx?&ObjectType=ALBUM&ObjectID=d7da2bd6-5cc2-4f7f-a848-0f43fbe2d9cb" alt="دانشگاه">
+        <!-- Images Filter For  -->
+        <div class="absolute w-full h-full top-0 shadow-[inset_0_0_35px_10px_rgba(0,0,0,0.7)] sm:shadow-[inset_0_0_65px_20px_rgba(0,0,0,0.7)]" style="backdrop-filter: brightness(103%) contrast(115%) saturate(1.4);"></div>
+      </div>
+      <div class="flex flex-col sm:flex-row mt-10" dir="rtl">
+        <div class="sm:w-1/3 text-center sm:pl-8 sm:py-8">
+          <div class="w-28 h-28 p-1 rounded-full border-4 border-indigo-800 inline-flex items-center justify-center mb-4 lg:-mt-6">
+            <div class="w-full h-full rounded-full bg-gray-200 text-gray-400 overflow-hidden">
+              <img zoomImg="disable" src="https://malayeru.ac.ir/portal/home/?personpicture/32806/fix" alt="">
+            </div>
+          </div>
+          <div class="flex flex-col items-center text-center justify-center">
+            <h2 class="font-medium title-font text-gray-300 text-[20px] sm:text-[27px]" style="font-family: dimashekasteh;">دکتر ابراهیم محمدی منش</h2>
+            <div class="w-20 h-1 bg-indigo-800 rounded mt-1 mb-4"></div>
+            <p class="text-base text-gray-500" style="font-family: vazir;" dir="rtl">محمدی منش دکتری تخصصی رشته فیزیک جامد از دانشگاه خواجه نصیر طوسی را دارد و عضو هیئت علمی دانشگاه ملایر است. او قبلا رئیس دفتر رئیس دانشگاه بوعلی سینا، مدیر امور اداری این دانشگاه و دبیر هم اندیشی استادان و نخبگان دانشگاه ملایر بوده است.</p>
+          </div>
+        </div>
+        <div class="sm:w-2/3 sm:pr-8 sm:py-6 sm:border-r-2 border-gray-600 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center text-right" style="font-family:vazir;">
+          <p class="leading-relaxed text-lg text-gray-400/90 mb-4 w-[95%]" dir="rtl">
+            مجتمع آموزش عالی ملایر در سال 1384 از دانشگاه بوعلی سینا مستقل شد و رسماً به عنوان دانشگاه ملایر فعالیت خود را آغاز کرد. با تلاش و کوشش مسئولین، روند احداث و تکمیل پروژه های عمرانی دانشگاه شتاب بیشتری یافت و در سال های اخیر نیز تکمیل، تجهیز و بهره برداری بسیاری از پروژه های مختلف عمرانی با جدیت پیگیری و به سرانجام رسیده است.
+            <br>در راستای توسعه همه جانبه دانشگاه، تلاش های فراوانی برای اخذ مجوز رشته های جدید انجام پذیرفت و سرانجام در سال 1399 دانشگاه ملایر به دانشگاه جامع ارتقاء پیدا نمود.
+            <br>در حال حاضر دانشگاه ملایر دارای 85 رشته تحصیلی شامل 14رشته در مقطع دکتری، 40 رشته در مقطع کارشناسی ارشد و 31 رشته در مقطع کارشناسی است و بیش از 5634 دانشجوی ایرانی و خارجی در مقاطع کارشناسی، کارشناسی ارشد، دکتری و پسا دکتری مشغول به تحصیل هستند.
+          </p>
+          <a class="text-indigo-500 text-xl inline-flex items-center hover:-translate-x-2">ادامه
+            <svg class="rotate-180 w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+  </div>
+
+  <div class="container relative w-full px-5 md:px-16 py-8 mx-auto">
+    <div class="w-full" style="font-family: vazir;">
+      <div class="relative w-full flex items-center justify-center sm:justify-start" dir="rtl">
+        <div class="relative sm:text-[45px] text-[35px] text-gray-300" style="font-family: promoter;">
+          <svg class="svg-color w-10 sm:w-12 -mt-1 sm:-mt-2 inline-block" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve"><g><path d="M28.8,23.4l-0.9-1.3c-0.6-0.9-0.9-2-0.9-3.1c0-2.2-1.8-4-4-4s-4,1.8-4,4c0,1.1-0.3,2.2-0.9,3.1l-0.9,1.3c-0.2,0.3-0.2,0.7,0,1S17.6,25,18,25h10c0.4,0,0.7-0.2,0.9-0.5S29,23.8,28.8,23.4z"/><path d="M15.5,22.3l0.9-1.3c0.4-0.6,0.6-1.3,0.6-2c0-3.3,2.7-6,6-6c3.1,0,5.6,2.3,6,5.4c0-0.1,0-0.2,0-0.4V9c0-2.8-2.2-5-5-5H8C5.2,4,3,6.2,3,9v19c0,0.4,0.2,0.7,0.6,0.9C3.7,29,3.9,29,4,29c0.2,0,0.5-0.1,0.7-0.2c3-2.6,6.6-4.3,10.4-5.2C15.1,23.1,15.2,22.7,15.5,22.3z M11,11h6c0.6,0,1,0.4,1,1s-0.4,1-1,1h-6c-0.6,0-1-0.4-1-1S10.4,11,11,11z M14,17h-3c-0.6,0-1-0.4-1-1s0.4-1,1-1h3c0.6,0,1,0.4,1,1S14.6,17,14,17z"/><path d="M25,26h-4c-0.6,0-1,0.4-1,1c0,1.7,1.3,3,3,3s3-1.3,3-3C26,26.4,25.6,26,25,26z"/></g></svg>
+          اطلاعیه ها
+          <div class="h-1 w-44 bg-indigo-700 rounded -mt-2 sm:mr-1"></div>
+        </div>
+      </div>
+
+      <div class="my-5 py-1 px-5 max-h-[60vh] whitespace-nowrap overflow-y-auto" style="font-family: vazir; -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 94%, rgba(0,0,0,0) 99%);" dir="rtl">
+        <div class="relative w-full my-4 odd:bg-zinc-900 even:bg-zinc-800 shadow-lg shadow-black hover:shadow hover:shadow-indigo-900 rounded-lg py-1 md:py-4 flex flex-col md:flex-row">
+          <span class="w-full px-6 py-2 flex items-center text-gray-300 whitespace-normal">
+            یازدهمین دوره ترم تابستانی دانشگاه ملایر - تابستان 1401
+          </span>
+          <span class="w-10/12 mx-auto md:mx-0 md:w-72 py-2 flex items-center justify-center text-sm text-gray-400 border-y-2 md:border-x-2 md:border-y-0 md:border-y-0 border-zinc-500 whitespace-nowrap">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/15 چهارشنبه
+          </span>
+          <span class="w-full md:w-fit px-6 py-2 flex items-center justify-center whitespace-nowrap">
+            <a href="#continue-notification" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-file-invoice ml-1 -mt-1 transition-0"></i>
+              مشاهده اطلاعیه
+            </a>
+          </span>
+        </div>
+        <div class="relative w-full my-4 odd:bg-zinc-900 even:bg-zinc-800 shadow-lg shadow-black hover:shadow hover:shadow-indigo-900 rounded-lg py-1 md:py-4 flex flex-col md:flex-row">
+          <span class="w-full px-6 py-2 flex items-center text-gray-300 whitespace-normal">
+            فراخوان جذب عضو هیات علمی دانشگاه ملایر
+          </span>
+          <span class="w-10/12 mx-auto md:mx-0 md:w-72 py-2 flex items-center justify-center text-sm text-gray-400 border-y-2 md:border-x-2 md:border-y-0 border-zinc-500 whitespace-nowrap">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/28 سه‌شنبه
+          </span>
+          <span class="w-full md:w-fit px-6 py-2 flex items-center justify-center whitespace-nowrap">
+            <a href="#continue-notification" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-file-invoice ml-1 -mt-1 transition-0"></i>
+              مشاهده اطلاعیه
+            </a>
+          </span>
+        </div>
+        <div class="relative w-full my-4 odd:bg-zinc-900 even:bg-zinc-800 shadow-lg shadow-black hover:shadow hover:shadow-indigo-900 rounded-lg py-1 md:py-4 flex flex-col md:flex-row">
+          <span class="w-full px-6 py-2 flex items-center text-gray-300 whitespace-normal">
+            اطلاعیه پایش وضعیت اشتغال فارغ التحصیلان از سال 1396 تا 1400
+          </span>
+          <span class="w-10/12 mx-auto md:mx-0 md:w-72 py-2 flex items-center justify-center text-sm text-gray-400 border-y-2 md:border-x-2 md:border-y-0 border-zinc-500 whitespace-nowrap">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/28 سه‌شنبه
+          </span>
+          <span class="w-full md:w-fit px-6 py-2 flex items-center justify-center whitespace-nowrap">
+            <a href="#continue-notification" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-file-invoice ml-1 -mt-1 transition-0"></i>
+              مشاهده اطلاعیه
+            </a>
+          </span>
+        </div>
+        <div class="relative w-full my-4 odd:bg-zinc-900 even:bg-zinc-800 shadow-lg shadow-black hover:shadow hover:shadow-indigo-900 rounded-lg py-1 md:py-4 flex flex-col md:flex-row">
+          <span class="w-full px-6 py-2 flex items-center text-gray-300 whitespace-normal">
+            تمدید طرح گرنت فناوری (حمایت مالی از پایان نامه ها و رساله های فناورانه و بازارگرا)
+          </span>
+          <span class="w-10/12 mx-auto md:mx-0 md:w-72 py-2 flex items-center justify-center text-sm text-gray-400 border-y-2 md:border-x-2 md:border-y-0 border-zinc-500 whitespace-nowrap">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/18 شنبه
+          </span>
+          <span class="w-full md:w-fit px-6 py-2 flex items-center justify-center whitespace-nowrap">
+            <a href="#continue-notification" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-file-invoice ml-1 -mt-1 transition-0"></i>
+              مشاهده اطلاعیه
+            </a>
+          </span>
+        </div>
+        <div class="relative w-full my-4 odd:bg-zinc-900 even:bg-zinc-800 shadow-lg shadow-black hover:shadow hover:shadow-indigo-900 rounded-lg py-1 md:py-4 flex flex-col md:flex-row">
+          <span class="w-full px-6 py-2 flex items-center text-gray-300 whitespace-normal">
+            اطلاعیه حذف پزشکی ویژه نیمسال دوم 1401-1400
+          </span>
+          <span class="w-10/12 mx-auto md:mx-0 md:w-72 py-2 flex items-center justify-center text-sm text-gray-400 border-y-2 md:border-x-2 md:border-y-0 border-zinc-500 whitespace-nowrap">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/12 یکشنبه
+          </span>
+          <span class="w-full md:w-fit px-6 py-2 flex items-center justify-center whitespace-nowrap">
+            <a href="#continue-notification" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-file-invoice ml-1 -mt-1 transition-0"></i>
+              مشاهده اطلاعیه
+            </a>
+          </span>
+        </div>
+        <div class="relative w-full my-4 odd:bg-zinc-900 even:bg-zinc-800 shadow-lg shadow-black hover:shadow hover:shadow-indigo-900 rounded-lg py-1 md:py-4 flex flex-col md:flex-row">
+          <span class="w-full px-6 py-2 flex items-center text-gray-300 whitespace-normal">
+            اسامی پذیرفته شدگان کارشناسی ارشد بدون آزمون استعداد درخشان دانشگاه ملایر درسال تحصیلی 1401-1402
+          </span>
+          <span class="w-10/12 mx-auto md:mx-0 md:w-72 py-2 flex items-center justify-center text-sm text-gray-400 border-y-2 md:border-x-2 md:border-y-0 border-zinc-500 whitespace-nowrap">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/6 دوشنبه
+          </span>
+          <span class="w-full md:w-fit px-6 py-2 flex items-center justify-center whitespace-nowrap">
+            <a href="#continue-notification" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-file-invoice ml-1 -mt-1 transition-0"></i>
+              مشاهده اطلاعیه
+            </a>
+          </span>
+        </div>
+        <div class="relative w-full my-4 odd:bg-zinc-900 even:bg-zinc-800 shadow-lg shadow-black hover:shadow hover:shadow-indigo-900 rounded-lg py-1 md:py-4 flex flex-col md:flex-row">
+          <span class="w-full px-6 py-2 flex items-center text-gray-300 whitespace-normal">
+            اطلاعیه تکمیل فرم تاییدیه فارغ التحصیلان رتبه اول
+          </span>
+          <span class="w-10/12 mx-auto md:mx-0 md:w-72 py-2 flex items-center justify-center text-sm text-gray-400 border-y-2 md:border-x-2 md:border-y-0 border-zinc-500 whitespace-nowrap">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/6 دوشنبه
+          </span>
+          <span class="w-full md:w-fit px-6 py-2 flex items-center justify-center whitespace-nowrap">
+            <a href="#continue-notification" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-file-invoice ml-1 -mt-1 transition-0"></i>
+              مشاهده اطلاعیه
+            </a>
+          </span>
+        </div>
+        <div class="relative w-full my-4 odd:bg-zinc-900 even:bg-zinc-800 shadow-lg shadow-black hover:shadow hover:shadow-indigo-900 rounded-lg py-1 md:py-4 flex flex-col md:flex-row">
+          <span class="w-full px-6 py-2 flex items-center text-gray-300 whitespace-normal">
+            اطلاعیه برگزاری کارگاه آموزشی مجازی ایمنی در آزمایشگاه
+          </span>
+          <span class="w-10/12 mx-auto md:mx-0 md:w-72 py-2 flex items-center justify-center text-sm text-gray-400 border-y-2 md:border-x-2 md:border-y-0 border-zinc-500 whitespace-nowrap">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/3/2 دوشنبه
+          </span>
+          <span class="w-full md:w-fit px-6 py-2 flex items-center justify-center whitespace-nowrap">
+            <a href="#continue-notification" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-file-invoice ml-1 -mt-1 transition-0"></i>
+              مشاهده اطلاعیه
+            </a>
+          </span>
+        </div>
+        <div class="relative w-full my-4 odd:bg-zinc-900 even:bg-zinc-800 shadow-lg shadow-black hover:shadow hover:shadow-indigo-900 rounded-lg py-1 md:py-4 flex flex-col md:flex-row">
+          <span class="w-full px-6 py-2 flex items-center text-gray-300 whitespace-normal">
+            برگزاری مراسم تقدیر از برترین های آموزشی، فرهنگی و دانشجویی دانشگاه ملایر
+          </span>
+          <span class="w-10/12 mx-auto md:mx-0 md:w-72 py-2 flex items-center justify-center text-sm text-gray-400 border-y-2 md:border-x-2 md:border-y-0 border-zinc-500 whitespace-nowrap">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/2/27 سه‌شنبه
+          </span>
+          <span class="w-full md:w-fit px-6 py-2 flex items-center justify-center whitespace-nowrap">
+            <a href="#continue-notification" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-file-invoice ml-1 -mt-1 transition-0"></i>
+              مشاهده اطلاعیه
+            </a>
+          </span>
+        </div>
+        <div class="relative w-full my-4 odd:bg-zinc-900 even:bg-zinc-800 shadow-lg shadow-black hover:shadow hover:shadow-indigo-900 rounded-lg py-1 md:py-4 flex flex-col md:flex-row">
+          <span class="w-full px-6 py-2 flex items-center text-gray-300 whitespace-normal">
+            اطلاعیه ویژه دانشجویان رشته حقوق
+          </span>
+          <span class="w-10/12 mx-auto md:mx-0 md:w-72 py-2 flex items-center justify-center text-sm text-gray-400 border-y-2 md:border-x-2 md:border-y-0 border-zinc-500 whitespace-nowrap">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/2/24 شنبه
+          </span>
+          <span class="w-full md:w-fit px-6 py-2 flex items-center justify-center whitespace-nowrap">
+            <a href="#continue-notification" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-file-invoice ml-1 -mt-1 transition-0"></i>
+              مشاهده اطلاعیه
+            </a>
+          </span>
+        </div>
+        <div class="relative w-full my-4 odd:bg-zinc-900 even:bg-zinc-800 shadow-lg shadow-black hover:shadow hover:shadow-indigo-900 rounded-lg py-1 md:py-4 flex flex-col md:flex-row">
+          <span class="w-full px-6 py-2 flex items-center text-gray-300 whitespace-normal">
+            اطلاعیه مهم در خصوص ثبت نام وام های دانشجویی
+          </span>
+          <span class="w-10/12 mx-auto md:mx-0 md:w-72 py-2 flex items-center justify-center text-sm text-gray-400 border-y-2 md:border-x-2 md:border-y-0 border-zinc-500 whitespace-nowrap">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/2/23 جمعه
+          </span>
+          <span class="w-full md:w-fit px-6 py-2 flex items-center justify-center whitespace-nowrap">
+            <a href="#continue-notification" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-file-invoice ml-1 -mt-1 transition-0"></i>
+              مشاهده اطلاعیه
+            </a>
+          </span>
+        </div>
+        <div class="relative w-full my-4 odd:bg-zinc-900 even:bg-zinc-800 shadow-lg shadow-black hover:shadow hover:shadow-indigo-900 rounded-lg py-1 md:py-4 flex flex-col md:flex-row">
+          <span class="w-full px-6 py-2 flex items-center text-gray-300 whitespace-normal">
+            اجرای طرح دستیار فناور در دانشگاه ملاير
+          </span>
+          <span class="w-10/12 mx-auto md:mx-0 md:w-72 py-2 flex items-center justify-center text-sm text-gray-400 border-y-2 md:border-x-2 md:border-y-0 border-zinc-500 whitespace-nowrap">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/2/21 چهارشنبه
+          </span>
+          <span class="w-full md:w-fit px-6 py-2 flex items-center justify-center whitespace-nowrap">
+            <a href="#continue-notification" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-file-invoice ml-1 -mt-1 transition-0"></i>
+              مشاهده اطلاعیه
+            </a>
+          </span>
+        </div>
+        <div class="relative w-full my-4 odd:bg-zinc-900 even:bg-zinc-800 shadow-lg shadow-black hover:shadow hover:shadow-indigo-900 rounded-lg py-1 md:py-4 flex flex-col md:flex-row">
+          <span class="w-full px-6 py-2 flex items-center text-gray-300 whitespace-normal">
+            اطلاعیه ویژه دانشجویان دانشکده ادبیات و علوم انسانی؛ شرایط و زمان پذیرش در خوابگاه
+          </span>
+          <span class="w-10/12 mx-auto md:mx-0 md:w-72 py-2 flex items-center justify-center text-sm text-gray-400 border-y-2 md:border-x-2 md:border-y-0 border-zinc-500 whitespace-nowrap">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/2/19 دوشنبه
+          </span>
+          <span class="w-full md:w-fit px-6 py-2 flex items-center justify-center whitespace-nowrap">
+            <a href="#continue-notification" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-file-invoice ml-1 -mt-1 transition-0"></i>
+              مشاهده اطلاعیه
+            </a>
+          </span>
+        </div>
+        <div class="relative w-full my-4 odd:bg-zinc-900 even:bg-zinc-800 shadow-lg shadow-black hover:shadow hover:shadow-indigo-900 rounded-lg py-1 md:py-4 flex flex-col md:flex-row">
+          <span class="w-full px-6 py-2 flex items-center text-gray-300 whitespace-normal">
+            فراخوان مناقصه عمومی یک مرحله‌ای امورنگهداری و توسعه فضای سبز دانشگاه ملایر و پردیس دانشکده‌های فنی و مهندسی و همچنین پارک جنگلی شاهد دانشگاه ملایر در سال 1401 (نوبت دوم)
+          </span>
+          <span class="w-10/12 mx-auto md:mx-0 md:w-72 py-2 flex items-center justify-center text-sm text-gray-400 border-y-2 md:border-x-2 md:border-y-0 border-zinc-500 whitespace-nowrap">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/2/11 یکشنبه
+          </span>
+          <span class="w-full md:w-fit px-6 py-2 flex items-center justify-center whitespace-nowrap">
+            <a href="#continue-notification" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-file-invoice ml-1 -mt-1 transition-0"></i>
+              مشاهده اطلاعیه
+            </a>
+          </span>
+        </div>
+        <div class="relative w-full my-4 odd:bg-zinc-900 even:bg-zinc-800 shadow-lg shadow-black hover:shadow hover:shadow-indigo-900 rounded-lg py-1 md:py-4 flex flex-col md:flex-row">
+          <span class="w-full px-6 py-2 flex items-center text-gray-300 whitespace-normal">
+            فراخوان مناقصه عمومی یک مرحله‌ای انجام امور خدمات عمومی دانشگاه ملایر در سال 1401 (نوبت دوم)
+          </span>
+          <span class="w-10/12 mx-auto md:mx-0 md:w-72 py-2 flex items-center justify-center text-sm text-gray-400 border-y-2 md:border-x-2 md:border-y-0 border-zinc-500 whitespace-nowrap">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/2/11 یکشنبه
+          </span>
+          <span class="w-full md:w-fit px-6 py-2 flex items-center justify-center whitespace-nowrap">
+            <a href="#continue-notification" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-file-invoice ml-1 -mt-1 transition-0"></i>
+              مشاهده اطلاعیه
+            </a>
+          </span>
+        </div>
+        <div class="relative w-full my-4 odd:bg-zinc-900 even:bg-zinc-800 shadow-lg shadow-black hover:shadow hover:shadow-indigo-900 rounded-lg py-1 md:py-4 flex flex-col md:flex-row">
+          <span class="w-full px-6 py-2 flex items-center text-gray-300 whitespace-normal">
+            فراخوان مناقصه عمومی یک مرحله‌ای امور نگهداری سیستم تأسیسات برقی و مکانیکی دانشگاه ملایر در سال 1401 (نوبت دوم)
+          </span>
+          <span class="w-10/12 mx-auto md:mx-0 md:w-72 py-2 flex items-center justify-center text-sm text-gray-400 border-y-2 md:border-x-2 md:border-y-0 border-zinc-500 whitespace-nowrap">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/2/11 یکشنبه
+          </span>
+          <span class="w-full md:w-fit px-6 py-2 flex items-center justify-center whitespace-nowrap">
+            <a href="#continue-notification" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-file-invoice ml-1 -mt-1 transition-0"></i>
+              مشاهده اطلاعیه
+            </a>
+          </span>
+        </div>
+      </div>
+      <a href="#Notifications-List" class="w-fit ml-4 flex items-cetner justify-center -mt-2 text-indigo-600 text-base hover:-translate-x-[15px]"><i class="fas fa-arrow-left mt-0.5 mr-1 text-sm"></i>مشاهده همه اطلاعیه ها</a>
+    </div>
+  </div>
+
+  <div class="container relative w-full px-5 md:px-16 py-8 mx-auto"> 
+    <div class="w-full" style="font-family: vazir;">
+      <div class="relative w-full flex items-center justify-center sm:justify-start" dir="rtl">
+        <div class="relative sm:text-[45px] text-[35px] text-gray-300" style="font-family: promoter;">
+          <svg class="svg-color w-10 sm:w-12 -mt-1 sm:-mt-2 inline-block" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="ic_fluent_news_28_filled" fill="#212121" fill-rule="nonzero"><path d="M22,5.75 L22,20.5 C22,20.7761424 22.2238576,21 22.5,21 C22.7454599,21 22.9496084,20.8231248 22.9919443,20.5898756 L23,20.5 L23,7 L24.25,7 C25.1681734,7 25.9211923,7.70711027 25.9941988,8.60647279 L26,8.75 L26,20.75 C26,22.4830315 24.6435452,23.8992459 22.9344239,23.9948552 L22.75,24 L5.25,24 C3.51696854,24 2.10075407,22.6435452 2.00514479,20.9344239 L2,20.75 L2,5.75 C2,4.8318266 2.70711027,4.07880766 3.60647279,4.0058012 L3.75,4 L20.25,4 C21.1681734,4 21.9211923,4.70711027 21.9941988,5.60647279 L22,5.75 L22,20.5 L22,5.75 Z M9.74652744,13.0034726 L7.25,13.0034726 C6.3318266,13.0034726 5.57880766,13.7105828 5.5058012,14.6099454 L5.5,14.7534726 L5.5,17.25 C5.5,18.1681734 6.20711027,18.9211923 7.10647279,18.9941988 L7.25,19 L9.74652744,19 C10.6647008,19 11.4177198,18.2928897 11.4907262,17.3935272 L11.4965274,17.25 L11.4965274,14.7534726 C11.4965274,13.8352992 10.7894172,13.0822802 9.89005465,13.0092738 L9.74652744,13.0034726 Z M17.75,17.5 L14.25,17.5 L14.1482294,17.5068466 C13.7821539,17.556509 13.5,17.8703042 13.5,18.25 C13.5,18.6296958 13.7821539,18.943491 14.1482294,18.9931534 L14.25,19 L17.75,19 L17.8517706,18.9931534 C18.2178461,18.943491 18.5,18.6296958 18.5,18.25 C18.5,17.8703042 18.2178461,17.556509 17.8517706,17.5068466 L17.75,17.5 Z M7.25,14.5034726 L9.74652744,14.5034726 C9.86487417,14.5034726 9.96401426,14.585706 9.98992476,14.6961499 L9.99652744,14.7534726 L9.99652744,17.25 C9.99652744,17.3683467 9.91429402,17.4674868 9.80385014,17.4933973 L9.74652744,17.5 L7.25,17.5 C7.13165327,17.5 7.03251318,17.4177666 7.00660268,17.3073227 L7,17.25 L7,14.7534726 C7,14.6351258 7.08223341,14.5359857 7.19267729,14.5100752 L7.25,14.5034726 L9.74652744,14.5034726 L7.25,14.5034726 Z M17.75,13.0034726 L14.25,13.0034726 L14.1482294,13.0103192 C13.7821539,13.0599816 13.5,13.3737768 13.5,13.7534726 C13.5,14.1331683 13.7821539,14.4469635 14.1482294,14.4966259 L14.25,14.5034726 L17.75,14.5034726 L17.8517706,14.4966259 C18.2178461,14.4469635 18.5,14.1331683 18.5,13.7534726 C18.5,13.3737768 18.2178461,13.0599816 17.8517706,13.0103192 L17.75,13.0034726 Z M17.75,8.49665793 L6.25,8.49665793 L6.14822944,8.50350455 C5.78215388,8.55316697 5.5,8.86696217 5.5,9.24665793 C5.5,9.6263537 5.78215388,9.94014889 6.14822944,9.98981132 L6.25,9.99665793 L17.75,9.99665793 L17.8517706,9.98981132 C18.2178461,9.94014889 18.5,9.6263537 18.5,9.24665793 C18.5,8.86696217 18.2178461,8.55316697 17.8517706,8.50350455 L17.75,8.49665793 Z"></path></g></g></svg>
+          اخبار دانشگاه
+          <div class="h-1 w-44 bg-indigo-700 rounded -mt-2 sm:mr-1"></div>
+        </div>
+      </div>
+      <div class="relative z-20 mx-auto my-8 mx-5 flex md:flex-row flex-col items-center" dir="rtl">
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-5 md:mb-0 rounded-xl overflow-hidden shadow-xl shadow-black">
+          <img class="object-cover object-center rounded-xl" alt="hero" src="https://malayeru.ac.ir/portal/picture/?242672/%C2%A0%D8%B3%D8%A7%D9%85%D8%A7%D9%86%D9%87-%D8%AC%D8%AF%DB%8C%D8%AF-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%BE%D8%B3%D8%AA-%D8%A7%D9%84%DA%A9%D8%AA%D8%B1%D9%88%D9%86%DB%8C%DA%A9%DB%8C-%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D9%84%D8%A7%DB%8C%D8%B1-%D8%B1%D8%A7%D9%87-%D8%A7%D9%86%D8%AF%D8%A7%D8%B2%DB%8C-%D8%B4%D8%AF">
+        </div>
+        <div class="lg:flex-grow md:w-1/2 lg:pr-12 md:pr-16 flex flex-col md:items-start text-right items-center">
+          <h1 class="title-font sm:text-3xl text-2xl mb-4 font-medium text-gray-300">سامانه جدید صندوق پست الکترونیکی دانشگاه ملایر راه اندازی شد.</h1>
+          <p class="mb-8 leading-relaxed text-gray-400 text-right">با توجه به نیاز دانشگاه به توسعه و ارتقاء فنی، دسترسی به امکانات بیشتر و رفع ایرادات و خطاهای صندوق پست الکترونیک دانشگاهی مورد استفاده، معاونت پژوهشی و فناوری دانشگاه اقدام به خرید و نصب سامانه صندوق پست الکترونیکی جدید به نام اکسیژن از شرکت پارس آوان نمود.</p>
+          <div class="flex justify-center">
+            <a href="#continue-news" class="overflow-hidden textoverflow-ellipsis whitespace-nowrap flex items-center justify-center text-gray-300 bg-gradient-to-tr from-indigo-600/50 to-indigo-900/40 border-0 py-1.5 px-4 outline-none rounded-lg text-xl hover:scale-[0.95] ml-2"><i class="far fa-newspaper ml-2 text-base"></i>مشاهده خبر</a>
+            <span class="pt-1 overflow-hidden textoverflow-ellipsis flex items-center justify-center text-gray-300/90 bg-gradient-to-tr from-gray-300/20 to-gray-600/10 border-0 px-2 rounded-lg text-[14px]"><i class="far fa-calendar-alt ml-2 -mt-1 text-base"></i>1401/4/22 چهارشنبه</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-container whitespace-nowrap overflow-x-auto pb-5 px-8" style="-webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 94%, rgba(0,0,0,0) 99%);" dir="rtl">
+        <div class="inline-block w-full xl:w-1/4 md:w-1/2 p-3">
+          <div class="bg-zinc-900 p-5 rounded-lg shadow-xl shadow-black" dir="rtl">
+            <img class="h-40 rounded w-full object-cover object-center mb-4" src="https://malayeru.ac.ir/portal/picture/?242666/%D9%85%D9%88%D9%81%D9%82%DB%8C%D8%AA-%D8%AF%D8%A7%D9%86%D8%B4%D8%AC%D9%88%DB%8C-%D8%B1%D8%B4%D8%AA%D9%87-%D8%B1%D9%88%D8%A7%D9%86%D8%B4%D9%86%D8%A7%D8%B3%DB%8C-%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D9%84%D8%A7%DB%8C%D8%B1-%D8%AF%D8%B1-%DA%A9%D8%B3%D8%A8-%D8%B1%D8%AA%D8%A8%D9%87-%D8%A7%D9%88%D9%84-%D8%A2%D8%B2%D9%85%D9%88%D9%86-%D9%88%D8%B2%D8%A7%D8%B1%D8%AA-%D8%A8%D9%87%D8%AF%D8%A7%D8%B4%D8%AA-%D9%88-%D8%A2%D8%B2%D9%85%D9%88%D9%86-%DA%A9%D8%A7%D8%B1%D8%B4%D9%86%D8%A7%D8%B3%DB%8C-%D8%A7%D8%B1%D8%B4%D8%AF-%D8%B3%D8%A7%D9%84-%DB%B1%DB%B4%DB%B0%DB%B1" alt="content">
+            <span class="tracking-widest text-gray-500 text-xs font-medium flex items-center">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/18 شنبه
+            </span>
+            <p class="text-base text-gray-300/90 font-medium title-font mb-2 overflow-hidden textoverflow-ellipsis whitespace-normal leading-[23px] h-[calc(23px*3)]" style="display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
+              موفقیت دانشجوی رشته روانشناسی دانشگاه ملایر در کسب رتبه اول آزمون وزارت بهداشت و آزمون کارشناسی ارشد سال ۱۴۰۱
+            </p>
+            <a href="#continue-news" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="far fa-newspaper ml-1 transition-0"></i>
+              مشاهده خبر
+            </a>
+          </div>
+        </div>
+        <div class="inline-block w-full xl:w-1/4 md:w-1/2 p-3">
+          <div class="bg-zinc-900 p-5 rounded-lg shadow-xl shadow-black" dir="rtl">
+            <img class="h-40 rounded w-full object-cover object-center mb-4" src="https://malayeru.ac.ir/portal/picture/?242663/%D8%A8%D8%B1%DA%AF%D8%B2%D8%A7%D8%B1%DB%8C-%D9%86%D8%B4%D8%B3%D8%AA-%D8%AA%D8%AE%D8%B5%D8%B5%DB%8C-%D9%85%D8%B4%D8%AA%D8%B1%DA%A9-%D8%A8%D8%A7-%D9%85%D8%AF%DB%8C%D8%B1%D8%A7%D9%86-%D8%B4%D8%B1%DA%A9%D8%AA-%D8%A2%D9%87%D9%86-%D9%88-%D9%81%D8%B1%D9%88%D8%B3%DB%8C%D9%84%DB%8C%D8%B3-%D8%A2%D8%B0%D8%B1%D8%AE%D8%B4" alt="News">
+            <span class="tracking-widest text-gray-500 text-xs font-medium flex items-center">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/14 سه‌شنبه
+            </span>
+            <p class="text-base text-gray-300/90 font-medium title-font mb-2 overflow-hidden textoverflow-ellipsis whitespace-normal leading-[23px] h-[calc(23px*3)]" style="display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
+              برگزاری نشست تخصصی مشترک با مدیران شرکت آهن و فروسیلیس آذرخش
+            </p>
+            <a href="#continue-news" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="far fa-newspaper ml-1 transition-0"></i>
+              مشاهده خبر
+            </a>
+          </div>
+        </div>
+        <div class="inline-block w-full xl:w-1/4 md:w-1/2 p-3">
+          <div class="bg-zinc-900 p-5 rounded-lg shadow-xl shadow-black" dir="rtl">
+            <img class="h-40 rounded w-full object-cover object-center mb-4" src="https://malayeru.ac.ir/portal/picture/?242657/%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD%DB%8C%D9%87-%D8%B7%D8%B1%D8%AD-%D8%B6%DB%8C%D8%A7%D9%81%D8%AA-%D8%A7%D9%86%D8%AF%DB%8C%D8%B4%D9%87-%D8%A7%D8%B3%D8%AA%D8%A7%D8%AF%D8%A7%D9%86-%D9%88-%D9%86%D8%AE%D8%A8%DA%AF%D8%A7%D9%86-%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87-%D8%A8%D8%B1%DA%AF%D8%B2%D8%A7%D8%B1-%D8%B4%D8%AF" alt="News">
+            <span class="tracking-widest text-gray-500 text-xs font-medium flex items-center">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/12 یکشنبه
+            </span>
+            <p class="text-base text-gray-300/90 font-medium title-font mb-2 overflow-hidden textoverflow-ellipsis whitespace-normal leading-[23px] h-[calc(23px*3)]" style="display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
+              افتتاحیه طرح ضیافت اندیشه استادان و نخبگان دانشگاه برگزار شد
+            </p>
+            <a href="#continue-news" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="far fa-newspaper ml-1 transition-0"></i>
+              مشاهده خبر
+            </a>
+          </div>
+        </div>
+        <div class="inline-block w-full xl:w-1/4 md:w-1/2 p-3">
+          <div class="bg-zinc-900 p-5 rounded-lg shadow-xl shadow-black" dir="rtl">
+            <img class="h-40 rounded w-full object-cover object-center mb-4" src="https://malayeru.ac.ir/portal/picture/?242661/%D9%86%D8%B4%D8%B3%D8%AA-%D9%87%D9%85-%D8%A7%D9%86%D8%AF%DB%8C%D8%B4%DB%8C-%D9%88-%D8%AA%D8%A8%D8%A7%D8%AF%D9%84-%D9%86%D8%B8%D8%B1-%D8%A7%D8%A6%D9%85%D9%87-%D8%AC%D9%85%D8%A7%D8%B9%D8%AA-%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D9%84%D8%A7%DB%8C%D8%B1-%D8%A8%D8%A7-%D9%85%D8%B3%D8%A6%D9%88%D9%84%D8%A7%D9%86-%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87-%D8%A8%D8%B1%DA%AF%D8%B2%D8%A7%D8%B1-%D8%B4%D8%AF" alt="News">
+            <span class="tracking-widest text-gray-500 text-xs font-medium flex items-center">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/8 چهارشنبه
+            </span>
+            <p class="text-base text-gray-300/90 font-medium title-font mb-2 overflow-hidden textoverflow-ellipsis whitespace-normal leading-[23px] h-[calc(23px*3)]" style="display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
+              نشست هم اندیشی و تبادل نظر ائمه جماعت دانشگاه ملایر با مسئولان دانشگاه برگزار شد
+            </p>
+            <a href="#continue-news" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="far fa-newspaper ml-1 transition-0"></i>
+              مشاهده خبر
+            </a>
+          </div>
+        </div>
+        <div class="inline-block w-full xl:w-1/4 md:w-1/2 p-3">
+          <div class="bg-zinc-900 p-5 rounded-lg shadow-xl shadow-black" dir="rtl">
+            <img class="h-40 rounded w-full object-cover object-center mb-4" src="https://malayeru.ac.ir/portal/picture/?242646/%DA%AF%D8%B1%D8%AF%D9%87%D9%85%D8%A7%DB%8C%DB%8C-%D9%88-%D9%86%D8%B4%D8%B3%D8%AA-%D9%87%D9%85-%D8%A7%D9%86%D8%AF%DB%8C%D8%B4%DB%8C-%D8%B4%D9%87%D8%B1%D8%AF%D8%A7%D8%B1%D8%A7%D9%86-%D9%88-%D8%A8%D8%AE%D8%B4%D8%AF%D8%A7%D8%B1%D8%A7%D9%86-%D8%AC%D9%86%D9%88%D8%A8-%D8%A7%D8%B3%D8%AA%D8%A7%D9%86-%D9%87%D9%85%D8%AF%D8%A7%D9%86-%D8%AF%D8%B1-%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D9%84%D8%A7%DB%8C%D8%B1-%D8%A8%D8%B1%DA%AF%D8%B2%D8%A7%D8%B1-%D8%B4%D8%AF" alt="News">
+            <span class="tracking-widest text-gray-500 text-xs font-medium flex items-center">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/7 سه‌شنبه
+            </span>
+            <p class="text-base text-gray-300/90 font-medium title-font mb-2 overflow-hidden textoverflow-ellipsis whitespace-normal leading-[23px] h-[calc(23px*3)]" style="display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
+              گردهمایی و نشست هم اندیشی شهرداران و بخشداران جنوب استان همدان در دانشگاه ملایر برگزار شد.
+            </p>
+            <a href="#continue-news" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="far fa-newspaper ml-1 transition-0"></i>
+              مشاهده خبر
+            </a>
+          </div>
+        </div>
+        <div class="inline-block w-full xl:w-1/4 md:w-1/2 p-3">
+          <div class="bg-zinc-900 p-5 rounded-lg shadow-xl shadow-black" dir="rtl">
+            <img class="h-40 rounded w-full object-cover object-center mb-4" src="https://malayeru.ac.ir/portal/picture/?242562/%D9%85%D8%B1%D8%A7%D8%B3%D9%85-%DA%AF%D8%B1%D8%A7%D9%85%DB%8C%D8%AF%D8%A7%D8%B4%D8%AA-%D8%B3%D8%A7%D9%84%D8%B1%D9%88%D8%B2-%D8%B4%D9%87%D8%A7%D8%AF%D8%AA-%D8%B4%D9%87%DB%8C%D8%AF-%DA%86%D9%85%D8%B1%D8%A7%D9%86-%D9%88-%D8%B1%D9%88%D8%B2-%D8%A8%D8%B3%DB%8C%D8%AC-%D8%A7%D8%B3%D8%A7%D8%AA%DB%8C%D8%AF-%D8%A8%D8%B1%DA%AF%D8%B2%D8%A7%D8%B1-%D8%B4%D8%AF" alt="News">
+            <span class="tracking-widest text-gray-500 text-xs font-medium flex items-center">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/1 چهارشنبه
+            </span>
+            <p class="text-base text-gray-300/90 font-medium title-font mb-2 overflow-hidden textoverflow-ellipsis whitespace-normal leading-[23px] h-[calc(23px*3)]" style="display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
+              مراسم گرامیداشت سالروز شهادت شهید چمران و روز بسیج اساتید برگزار شد
+            </p>
+            <a href="#continue-news" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="far fa-newspaper ml-1 transition-0"></i>
+              مشاهده خبر
+            </a>
+          </div>
+        </div>
+        <div class="inline-block w-full xl:w-1/4 md:w-1/2 p-3">
+          <div class="bg-zinc-900 p-5 rounded-lg shadow-xl shadow-black" dir="rtl">
+            <img class="h-40 rounded w-full object-cover object-center mb-4" src="https://malayeru.ac.ir/portal/picture/?242556/%D9%85%D8%B1%D8%A7%D8%B3%D9%85-%D8%AA%DA%A9%D8%B1%DB%8C%D9%85-%D9%88-%D9%85%D8%B9%D8%A7%D8%B1%D9%81%D9%87-%D8%AF%D8%A8%DB%8C%D8%B1-%D9%87%D9%85-%D8%A7%D9%86%D8%AF%DB%8C%D8%B4%DB%8C-%D8%A7%D8%B3%D8%A7%D8%AA%DB%8C%D8%AF-%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D9%84%D8%A7%DB%8C%D8%B1-%D8%A8%D8%B1%DA%AF%D8%B2%D8%A7%D8%B1-%D8%B4%D8%AF" alt="News">
+            <span class="tracking-widest text-gray-500 text-xs font-medium flex items-center">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/3/31 سه‌شنبه
+            </span>
+            <p class="text-base text-gray-300/90 font-medium title-font mb-2 overflow-hidden textoverflow-ellipsis whitespace-normal leading-[23px] h-[calc(23px*3)]" style="display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
+              مراسم تکریم و معارفه دبیر هم اندیشی اساتید دانشگاه ملایر برگزار شد.
+            </p>
+            <a href="#continue-news" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="far fa-newspaper ml-1 transition-0"></i>
+              مشاهده خبر
+            </a>
+          </div>
+        </div>
+        <div class="inline-block w-full xl:w-1/4 md:w-1/2 p-3">
+          <div class="bg-zinc-900 p-5 rounded-lg shadow-xl shadow-black" dir="rtl">
+            <img class="h-40 rounded w-full object-cover object-center mb-4" src="https://malayeru.ac.ir/portal/picture/?242533/%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D9%84%D8%A7%DB%8C%D8%B1-%D9%87%D9%85%D9%87-%D8%A7%D9%85%DA%A9%D8%A7%D9%86%D8%A7%D8%AA-%D9%84%D8%A7%D8%B2%D9%85-%D8%B1%D8%A7-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%88-%D9%BE%DA%98%D9%88%D9%87%D8%B4-%D8%AF%D8%A7%D9%88%D8%B7%D9%84%D8%A8%D8%A7%D9%86-%D8%A7%DB%8C%D9%86-%D8%A7%D8%B3%D8%AA%D8%A7%D9%86-%D9%88-%D8%B4%D9%87%D8%B1%D8%B3%D8%AA%D8%A7%D9%86-%D8%A8%D9%87-%D9%85%D9%86%D8%B8%D9%88%D8%B1-%D8%AA%D8%AD%D8%B5%DB%8C%D9%84-%D8%AF%D8%B1-%D8%A7%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1-%D8%AF%D8%A7%D8%B1%D8%AF%D8%8C-%D8%A8%D9%87-%D8%AC%D8%A7%DB%8C-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8-%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87-%D9%87%D8%A7%DB%8C-%D8%AF%DB%8C%DA%AF%D8%B1%D8%8C-%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D9%84%D8%A7%DB%8C%D8%B1-%D8%B1%D8%A7-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%AA%D8%AD%D8%B5%DB%8C%D9%84-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8-%DA%A9%D9%86%DB%8C%D8%AF" alt="News">
+            <span class="tracking-widest text-gray-500 text-xs font-medium flex items-center">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/3/28 شنبه
+            </span>
+            <p class="text-base text-gray-300/90 font-medium title-font mb-2 overflow-hidden textoverflow-ellipsis whitespace-normal leading-[23px] h-[calc(23px*3)]" style="display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
+              سرپرست دانشگاه ملایر در سخنان پیش از خطبه های نماز جمعه:دانشگاه ملایر همه امکانات لازم را برای آموزش و پژوهش داوطلبان این استان و شهرستان به منظور تحصیل در اختیار دارد
+            </p>
+            <a href="#continue-news" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="far fa-newspaper ml-1 transition-0"></i>
+              مشاهده خبر
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="#News-List" class="w-fit ml-4 flex items-cetner justify-center my-2 text-indigo-600 text-base hover:-translate-x-[15px]"><i class="fas fa-arrow-left mt-0.5 mr-1 text-sm"></i>مشاهده همه اخبار</a>
+    </div>
+  </div>
+
+
+  <div class="container relative w-full px-5 md:px-16 py-8 mx-auto"> 
+    <div class="w-full" style="font-family: vazir;">
+      <div class="relative w-full flex items-center justify-center sm:justify-start" dir="rtl">
+        <div class="relative sm:text-[45px] text-[35px] text-gray-300" style="font-family: promoter;">
+          <svg class="svg-color w-10 sm:w-12 -mt-1 sm:-mt-2 inline-block"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve"><g><g><g><g><g><path d="M479.808,326.519c-73.02,0-132.228,59.227-132.228,132.229c0,72.983,59.208,132.174,132.228,132.174c72.984,0,132.192-59.19,132.192-132.174C612,385.745,552.792,326.519,479.808,326.519z M488.292,556.469v-11.415c0-4.722-3.808-8.538-8.484-8.538c-4.722,0-8.521,3.826-8.521,8.538v11.415c-47.341-4.07-85.158-41.896-89.229-89.229h11.451c4.677,0,8.502-3.809,8.502-8.484c0-4.758-3.825-8.521-8.502-8.521h-11.451c4.07-47.351,41.896-85.14,89.229-89.229v11.433c0,4.704,3.809,8.521,8.521,8.521c4.677,0,8.484-3.826,8.484-8.521v-11.433c47.359,4.089,85.177,41.878,89.229,89.229h-11.451c-4.703,0-8.502,3.771-8.502,8.521c0,4.686,3.808,8.484,8.502,8.484h11.451C573.478,514.572,535.651,552.389,488.292,556.469z"/></g></g></g><g><g><g><path d="M529.066,445.966h-30.671c-4.089-5.897-10.881-9.813-18.588-9.813c-0.117,0-0.244,0.036-0.38,0.036l-27.948-39.346c-4.07-5.726-12.048-7.055-17.792-3.003c-5.726,4.089-7.101,12.084-3.003,17.828l27.967,39.363c-0.859,2.415-1.41,4.984-1.41,7.725c0,12.464,10.085,22.549,22.566,22.549c7.707,0,14.535-3.88,18.588-9.796h30.671c7.037,0,12.763-5.688,12.763-12.744C541.829,451.674,536.104,445.966,529.066,445.966z"/></g></g></g><g><g><g><path d="M127.245,195.593c23.137,0,41.86-18.741,41.86-41.851V62.93c0-23.119-18.723-41.851-41.86-41.851c-23.119,0-41.833,18.732-41.833,41.851v90.821C85.412,176.852,104.125,195.593,127.245,195.593z"/></g></g></g><g><g><g><path d="M383.578,195.593c23.138,0,41.86-18.741,41.86-41.851V62.93c0-23.119-18.723-41.851-41.86-41.851c-23.101,0-41.832,18.732-41.832,41.851v90.821C341.736,176.852,360.478,195.593,383.578,195.593z"/></g></g></g><g><g><g><path d="M183.957,311.793c0-11.948-9.66-21.626-21.636-21.626h-40.105c-11.948,0-21.653,9.678-21.653,21.626v40.088c0,11.966,9.705,21.672,21.653,21.672h40.105c11.966,0,21.636-9.706,21.636-21.672V311.793z"/></g></g></g><g><g><g><path d="M297.127,311.82c0-11.948-9.687-21.617-21.608-21.617h-40.124c-11.948,0-21.618,9.669-21.618,21.617v40.097c0,11.93,9.669,21.636,21.618,21.636h40.124c11.93,0,21.608-9.706,21.608-21.636V311.82z"/></g></g></g><g><g><g><path d="M348.548,290.167c-11.967,0-21.654,9.678-21.654,21.626v40.088c0,10.826,8.068,19.365,18.416,20.984c15.864-24.711,38.332-44.719,64.934-57.653v-3.419c0-11.948-9.669-21.626-21.636-21.626H348.548z"/></g></g></g><g><g><g><path d="M122.225,398.833c-11.948,0-21.654,9.669-21.654,21.617v40.105c0,11.948,9.706,21.617,21.654,21.617h40.124c11.948,0,21.608-9.669,21.608-21.617V420.45c0-11.948-9.66-21.617-21.608-21.617H122.225z"/></g></g></g><g><g><g><path d="M275.473,398.851h-40.087c-11.948,0-21.617,9.688-21.617,21.636v40.069c0,11.948,9.669,21.617,21.617,21.617h40.087c11.93,0,21.618-9.669,21.618-21.617v-40.069C297.091,408.538,287.403,398.851,275.473,398.851z"/></g></g></g><g><g><g><path d="M333.939,523.59H130.474c-35.022,0-63.523-28.5-63.523-63.486V247.592h376.958v55.608c11.551-2.659,23.518-4.215,35.899-4.215c10.619,0,20.984,1.095,31.033,3.094V102.204h-60.293v51.538c0,36.921-30.021,66.951-66.97,66.951c-36.93,0-66.95-30.029-66.95-66.951v-51.538H194.213v51.538c0,36.921-30.039,66.951-66.969,66.951c-36.913,0-66.951-30.029-66.951-66.951v-51.538H0v357.891c0,72.034,58.412,130.474,130.474,130.474h249.885c2.967,0,5.897-0.244,8.81-0.435C365.163,573.545,345.987,550.525,333.939,523.59z"/></g></g></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+          رویداد ها
+          <div class="h-1 w-44 bg-indigo-700 rounded -mt-1.5 sm:mr-1"></div>
+        </div>
+      </div>
+
+      <div class="scroll-container whitespace-nowrap overflow-x-scroll pb-5 px-8 my-5" style="-webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 94%, rgba(0,0,0,0) 99%);" dir="rtl">
+        <div class="inline-block w-full xl:w-[30%] md:w-1/2 p-3">
+          <div class="bg-zinc-900 p-5 rounded-lg shadow-xl shadow-black" dir="rtl">
+            <img class="h-40 rounded w-full h-60 object-cover object-center mb-4" src="https://malayeru.ac.ir/portal/home/?meetingpicture/241739/400/auto/" alt="content">
+            <span class="tracking-widest text-gray-500 text-xs font-medium flex items-center">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/11/1 شنبه
+            </span>
+            <p class="text-base text-gray-300/90 font-medium title-font mb-2 overflow-hidden textoverflow-ellipsis whitespace-normal leading-[23px] h-[calc(23px*3)]" style="display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
+              جشنواره سراسری علمی ، پژوهشی ، فرهنگی هنری و ادبی نماز با عنوان فجر تا فجر
+            </p>
+            <a href="#continue-news" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-newspaper ml-1 transition-0"></i>
+              مشاهده رویداد
+            </a>
+          </div>
+        </div>
+
+        <div class="inline-block w-full xl:w-[30%] md:w-1/2 p-3">
+          <div class="bg-zinc-900 p-5 rounded-lg shadow-xl shadow-black" dir="rtl">
+            <img class="h-40 rounded w-full h-60 object-cover object-center mb-4" src="https://malayeru.ac.ir/portal/home/?meetingpicture/242125/400/auto/" alt="content">
+            <span class="tracking-widest text-gray-500 text-xs font-medium flex items-center">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/6/7 دوشنبه
+            </span>
+            <p class="text-base text-gray-300/90 font-medium title-font mb-2 overflow-hidden textoverflow-ellipsis whitespace-normal leading-[23px] h-[calc(23px*3)]" style="display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
+              ششمین کنفرانس شیمی کاربردی ایران
+            </p>
+            <a href="#continue-news" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-newspaper ml-1 transition-0"></i>
+              مشاهده رویداد
+            </a>
+          </div>
+        </div>
+
+        <div class="inline-block w-full xl:w-[30%] md:w-1/2 p-3">
+          <div class="bg-zinc-900 p-5 rounded-lg shadow-xl shadow-black" dir="rtl">
+            <img class="h-40 rounded w-full h-60 object-cover object-center mb-4" src="https://malayeru.ac.ir/portal/home/?meetingpicture/242487/400/auto/" alt="content">
+            <span class="tracking-widest text-gray-500 text-xs font-medium flex items-center">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/5/23 یکشنبه
+            </span>
+            <p class="text-base text-gray-300/90 font-medium title-font mb-2 overflow-hidden textoverflow-ellipsis whitespace-normal leading-[23px] h-[calc(23px*3)]" style="display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
+              رویداد طراحی حسگرها و زیست حسگرهای شیمیایی برای شناسایی آلاینده های غذایی و زیست محیطی
+            </p>
+            <a href="#continue-news" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-newspaper ml-1 transition-0"></i>
+              مشاهده رویداد
+            </a>
+          </div>
+        </div>
+
+        <div class="inline-block w-full xl:w-[30%] md:w-1/2 p-3">
+          <div class="bg-zinc-900 p-5 rounded-lg shadow-xl shadow-black" dir="rtl">
+            <img class="h-40 rounded w-full h-60 object-cover object-center mb-4" src="https://malayeru.ac.ir/portal/home/?meetingpicture/242650/400/auto/" alt="content">
+            <span class="tracking-widest text-gray-500 text-xs font-medium flex items-center">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/31 جمعه
+            </span>
+            <p class="text-base text-gray-300/90 font-medium title-font mb-2 overflow-hidden textoverflow-ellipsis whitespace-normal leading-[23px] h-[calc(23px*3)]" style="display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
+              فراخوان جشنواره های خوارزمی
+            </p>
+            <a href="#continue-news" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-newspaper ml-1 transition-0"></i>
+              مشاهده رویداد
+            </a>
+          </div>
+        </div>
+
+        <div class="inline-block w-full xl:w-[30%] md:w-1/2 p-3">
+          <div class="bg-zinc-900 p-5 rounded-lg shadow-xl shadow-black" dir="rtl">
+            <img class="h-40 rounded w-full h-60 object-cover object-center mb-4" src="https://malayeru.ac.ir/portal/home/?meetingpicture/242597/400/auto/" alt="content">
+            <span class="tracking-widest text-gray-500 text-xs font-medium flex items-center">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/14 سه‌شنبه
+            </span>
+            <p class="text-base text-gray-300/90 font-medium title-font mb-2 overflow-hidden textoverflow-ellipsis whitespace-normal leading-[23px] h-[calc(23px*3)]" style="display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
+              سی و ششمین رویداد ایده پارک با موضوع فناوری اطلاعات
+            </p>
+            <a href="#continue-news" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-newspaper ml-1 transition-0"></i>
+              مشاهده رویداد
+            </a>
+          </div>
+        </div>
+
+        <div class="inline-block w-full xl:w-[30%] md:w-1/2 p-3">
+          <div class="bg-zinc-900 p-5 rounded-lg shadow-xl shadow-black" dir="rtl">
+            <img class="h-40 rounded w-full h-60 object-cover object-center mb-4" src="https://malayeru.ac.ir/portal/home/?meetingpicture/242535/400/auto/" alt="content">
+            <span class="tracking-widest text-gray-500 text-xs font-medium flex items-center">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/10 جمعه
+            </span>
+            <p class="text-base text-gray-300/90 font-medium title-font mb-2 overflow-hidden textoverflow-ellipsis whitespace-normal leading-[23px] h-[calc(23px*3)]" style="display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
+              کارگاه های تخصصی انگور / پژوهشکده انگور و کشمش دانشگاه ملایر با همکاری سازمان آموزش فنی و حرفه ای کشور
+            </p>
+            <a href="#continue-news" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-newspaper ml-1 transition-0"></i>
+              مشاهده رویداد
+            </a>
+          </div>
+        </div>
+
+        <div class="inline-block w-full xl:w-[30%] md:w-1/2 p-3">
+          <div class="bg-zinc-900 p-5 rounded-lg shadow-xl shadow-black" dir="rtl">
+            <img class="h-40 rounded w-full h-60 object-cover object-center mb-4" src="https://malayeru.ac.ir/portal/home/?meetingpicture/242417/400/auto/" alt="content">
+            <span class="tracking-widest text-gray-500 text-xs font-medium flex items-center">
+              <i class="far fa-calendar-alt ml-1 -mt-1 text-base"></i>
+              1401/4/1 چهارشنبه
+            </span>
+            <p class="text-base text-gray-300/90 font-medium title-font mb-2 overflow-hidden textoverflow-ellipsis whitespace-normal leading-[23px] h-[calc(23px*3)]" style="display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
+              دوره آموزشی جامع روزنامه نگاری علم و فناوری
+            </p>
+            <a href="#continue-news" class="text-indigo-500 text-base inline-flex items-center hover:text-sky-500">
+              <i class="fas fa-newspaper ml-1 transition-0"></i>
+              مشاهده رویداد
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="#Events-List" class="w-fit ml-4 flex items-cetner justify-center -mt-3 text-indigo-600 text-base hover:-translate-x-[15px]"><i class="fas fa-arrow-left mt-0.5 mr-1 text-sm"></i>مشاهده همه رویداد ها</a>
+    </div>
+  </div>
+
+  
+  
+
+
+  <div class="container relative w-full px-5 md:px-16 py-8 mx-auto">
+    <div class="w-full" style="font-family: vazir;">
+      <div class="relative w-full flex items-center justify-center sm:justify-start" dir="rtl">
+        <div class="relative sm:text-[45px] text-[35px] text-gray-300" style="font-family: promoter;">
+          <svg class="svg-color w-10 sm:w-12 -mt-1 sm:-mt-2 inline-block" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"><path d="M19,2H5C3.3,2,2,3.3,2,5v14c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3V5C22,3.3,20.7,2,19,2z M8,17c0,0.6-0.4,1-1,1s-1-0.4-1-1v-4c0-0.6,0.4-1,1-1s1,0.4,1,1V17z M13,17c0,0.6-0.4,1-1,1s-1-0.4-1-1V7c0-0.6,0.4-1,1-1s1,0.4,1,1V17z M18,17c0,0.6-0.4,1-1,1s-1-0.4-1-1v-6c0-0.6,0.4-1,1-1s1,0.4,1,1V17z"/></svg>
+          آمار دانشگاه
+          <div class="h-1 w-44 bg-indigo-700 rounded -mt-2 sm:mr-1"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center justify-center relative z-20 mx-auto my-5">
+        <div class="w-[130px] sm:w-[150px] my-2 sm:my-3 mx-2 sm:mx-4 py-3 px-5 flex items-center justify-center flex-col bg-zinc-900 rounded-lg shadow-xl shadow-black hover:scale-[1.05]">
+          <svg class="svg-color w-20 sm:w-28 my-2 sm:my-3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 481.882 481.882" style="enable-background:new 0 0 481.882 481.882;" xml:space="preserve"><g><g><polygon points="317.411,176.14 317.411,187.714 319.352,187.714 350.426,187.714 352.367,187.714 352.367,176.14 "/></g></g><g><g><polygon points="350.426,366.75 319.352,366.75 317.411,366.75 317.411,378.324 352.367,378.324 352.367,366.75 "/></g></g><g><g><rect x="326.852" y="202.775" width="16.015" height="148.917"/></g></g><g><g><path d="M309.882,202.772c-4.161,0-7.529-3.368-7.529-7.529V176.14H179.529v19.103c0,4.161-3.367,7.529-7.529,7.529h-1.941v148.919H172c4.162,0,7.529,3.368,7.529,7.529v19.103h10.515V241.802c0-4.162,3.368-7.529,7.529-7.529h86.735c4.162,0,7.529,3.367,7.529,7.529v136.522h10.515v-19.103c0-4.161,3.368-7.529,7.529-7.529h1.941V202.772H309.882z"/></g></g><g><g><rect x="205.101" y="249.299" width="71.672" height="128.979"/></g></g><g><g><polygon points="434.948,85.794 289.33,85.794 364.558,149.985 461.97,149.985 "/></g></g><g><g><polygon points="294.966,110.404 264.014,83.993 264.01,83.988 240.941,64.301 217.872,83.988 217.87,83.991 186.915,110.404 127.529,161.081 172,161.081 309.882,161.081 354.353,161.081 "/></g></g><g><g><path d="M381.351,165.044c1.009,1.867,1.256,4.1,0.494,6.17c-1.096,2.963-3.911,4.926-7.066,4.926h-7.353v19.103c0,4.161-3.368,7.529-7.529,7.529h-1.941v148.919h1.941c4.162,0,7.529,3.368,7.529,7.529v19.103h98.353v-213.28H381.351z M446.073,342.228c0,4.161-3.368,7.529-7.529,7.529h-35.118c-4.161,0-7.529-3.368-7.529-7.529v-40.273c0-4.161,3.368-7.529,7.529-7.529h35.118c4.162,0,7.529,3.368,7.529,7.529V342.228z M446.073,251.956c0,4.161-3.368,7.529-7.529,7.529h-35.118c-4.161,0-7.529-3.368-7.529-7.529v-40.272c0-4.162,3.368-7.529,7.529-7.529h35.118c4.162,0,7.529,3.367,7.529,7.529V251.956z"/></g></g><g><g><polygon points="162.529,366.75 131.463,366.75 129.514,366.75 129.514,378.324 164.47,378.324 164.47,366.75 "/></g></g><g><g><polygon points="46.934,85.794 19.912,149.985 117.323,149.985 192.551,85.794 "/></g></g><g><g><rect x="138.993" y="202.775" width="16.008" height="148.917"/></g></g><g><g><path d="M121.985,202.772c-4.161,0-7.529-3.368-7.529-7.529V176.14h-7.352c-3.155,0-5.971-1.964-7.066-4.926c-0.762-2.07-0.514-4.302,0.495-6.17H16.102v213.28h98.353v-19.103c0-4.161,3.368-7.529,7.529-7.529h1.949V202.772H121.985z M85.985,342.228c0,4.161-3.368,7.529-7.529,7.529H43.338c-4.161,0-7.529-3.368-7.529-7.529v-40.273c0-4.161,3.368-7.529,7.529-7.529h35.118c4.161,0,7.529,3.368,7.529,7.529V342.228z M85.985,251.956c0,4.161-3.368,7.529-7.529,7.529H43.338c-4.161,0-7.529-3.368-7.529-7.529v-40.272c0-4.162,3.368-7.529,7.529-7.529h35.118c4.161,0,7.529,3.367,7.529,7.529V251.956z"/></g></g><g><g><polygon points="473.309,393.382 359.897,393.382 309.882,393.382 284.308,393.382 197.573,393.382 172,393.382 121.985,393.382 8.573,393.382 0,393.382 0,417.581 481.882,417.581 481.882,393.382 "/></g></g><g><g><polygon points="129.514,176.14 129.514,187.714 131.463,187.714 162.529,187.714 164.47,187.714 164.47,176.14 "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+          <h2 class="title-font font-medium sm:text-3xl text-2xl text-gray-300/90">2.5 km<sup>2</sup></h2>
+          <p class="leading-relaxed text-gray-400">مساحت</p>
+        </div>
+        <div class="w-[130px] sm:w-[150px] my-2 sm:my-3 mx-2 sm:mx-4 py-3 px-5 flex items-center flex-col bg-zinc-900 rounded-lg shadow-xl shadow-black hover:scale-[1.05]">
+          <svg class="svg-color w-20 sm:w-28 my-2 sm:my-3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve"><g><g><path d="M498.757,74.817h-62.081L365.922,4.062c-5.416-5.417-14.197-5.417-19.613,0l-70.754,70.753h-62.082c-7.111,0-12.874,5.764-12.874,12.874v96.609l14.322-8.892c10.252-6.365,22.669-7.179,33.407-2.796l47.98-37.832c7.218-5.692,17.683-4.452,23.372,2.764c5.691,7.217,4.453,17.682-2.764,23.372l-46.771,36.879c3.782,15.127-2.369,31.596-16.326,40.262l-27.472,17.057L200.6,271.1v28.015c0,7.111,5.764,12.874,12.874,12.874h285.283c7.111,0,12.874-5.764,12.874-12.874V87.691C511.631,80.581,505.867,74.817,498.757,74.817z M314.781,74.817l41.335-41.335l41.335,41.335H314.781z"/></g></g><g><g><path d="M250.033,197.008c-5.371-8.651-16.738-11.309-25.387-5.938l-37.337,23.182c-0.155-30.964-0.073-14.527-0.173-34.473c-0.12-23.935-19.692-43.408-43.628-43.408H125.37c-4.612,11.961-16.241,42.121-19.723,51.152l36.901,16.939v-24.537c0-2.131,1.727-3.859,3.859-3.859s3.859,1.727,3.859,3.859c0,0.013,0,0.027,0,0.04l0.407,68.862c1.149,13.809,16.49,21.334,28.091,14.13l65.333-40.565C252.746,217.024,255.404,205.659,250.033,197.008z"/></g></g><g><g><path d="M44.898,288.234l0.009,201.644c0,12.219,9.904,22.123,22.123,22.123c12.219,0,22.123-9.904,22.123-22.123V313.047h8.403C95.784,312.464,44.898,288.234,44.898,288.234z"/></g></g><g><g><path d="M142.548,265.148l-16.221,35.333c-4.764,10.377-16.5,15.956-27.624,12.914v176.482c0,12.219,9.904,22.123,22.123,22.123c12.219,0,22.123-9.904,22.123-22.123C142.929,478.727,142.548,277.44,142.548,265.148z"/></g></g><g><g><path d="M106.462,166.368l-7.496-13.632l6.65-12.096c0.991-1.803-0.315-4.016-2.375-4.016H84.97c-2.057,0-3.367,2.211-2.375,4.016l6.665,12.12l-7.509,13.657c-0.872,1.587-1.156,3.428-0.804,5.203l2.628,13.236c7.868-2.859,13.773-1.141,20.462,1.929l3.21-15.117C107.629,169.865,107.35,167.983,106.462,166.368z"/></g></g><g><g><path d="M138.113,218.299l-42.707-19.606c-4.598-2.11-10.03-0.091-12.138,4.5L72.22,227.261l22.494,12.497c16.069,8.928,21.858,29.191,12.93,45.26c-2.77,4.987-6.641,8.971-11.133,11.846l4.573,2.099c4.598,2.11,10.03,0.091,12.138-4.5l29.391-64.027C144.722,225.842,142.707,220.408,138.113,218.299z"/></g></g><g><g><circle cx="93.928" cy="85.985" r="38.208"/></g></g><g><g><path d="M87.502,252.737l-50.195-27.888c0.103-16.785,0.18-29.136,0.276-44.884c0-0.001,0-0.001,0-0.002c0.011-2.016,1.652-3.643,3.668-3.638s3.647,1.642,3.647,3.659v32.096l14.677,8.155l10.586-23.059c2.399-5.227,6.595-9.294,11.651-11.606c-2.069-5.367-16.89-43.804-18.97-49.198H44.34c-23.937,0-43.507,19.474-43.627,43.387c-0.05,8.073-0.294,47.732-0.344,55.786c-0.042,6.736,3.594,12.958,9.482,16.229l59.744,33.193c8.899,4.946,20.124,1.74,25.069-7.161C99.608,268.907,96.402,257.682,87.502,252.737z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+          <h2 class="title-font font-medium sm:text-3xl text-2xl text-gray-300/90">324</h2>
+          <p class="leading-relaxed text-gray-400">استاد</p>
+        </div>
+        <div class="w-[130px] sm:w-[150px] my-2 sm:my-3 mx-2 sm:mx-4 py-3 px-5 flex items-center flex-col bg-zinc-900 rounded-lg shadow-xl shadow-black hover:scale-[1.05]">
+          <svg class="svg-color w-20 sm:w-28 my-2 sm:my-3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 494.881 494.881" style="enable-background:new 0 0 494.881 494.881;" xml:space="preserve"><g id="XMLID_211_"><path id="XMLID_216_" d="M196.782,63.877c-0.067,0.913-0.276,1.787-0.276,2.719c0,25.56,20.716,46.269,46.273,46.269c25.588,0,46.286-20.71,46.286-46.269c0-0.932-0.222-1.806-0.27-2.719H197.09H196.782z"/><path id="XMLID_215_" d="M366.799,278.201l-65.993-144.592c-3.881-8.501-11.933-11.822-21.559-11.822h-71.872c-8.525,0-16.177,1.996-20.882,8.759l-9.122,13.156l9.835-3.751l32.864-12.561c13.845-5.289,29.272,1.756,34.481,15.43l26.135,68.445c5.228,13.692-1.55,29.193-15.427,34.482l-25.329,9.664c-6.175,10.232-17.32,16.693-29.438,16.693c-5.849,0-24.418-4.521-30.76-5.904l-8.23,146.896c-0.179,2.992,0.886,5.912,2.958,8.087c2.036,2.175,4.915,3.404,7.892,3.404h4.269v46.541c0,13.116,10.647,23.751,23.761,23.751c13.12,0,23.761-10.635,23.761-23.751v-46.541h17.302v46.541c0,13.116,10.641,23.751,23.761,23.751c13.119,0,23.76-10.635,23.76-23.751v-46.541h4.299c2.996,0,5.837-1.229,7.892-3.388c2.054-2.167,3.137-5.08,2.977-8.057l-9.153-175.039l25.815,56.528c4.54,9.989,16.3,14.306,26.215,9.794C366.959,299.883,371.344,288.142,366.799,278.201z"/><path id="XMLID_214_" d="M179.314,195.475l38.474,8.408c15.802,3.444,26.609,17.25,27.027,32.719l14.787-5.642c5.561-2.12,8.439-8.377,6.286-14.049l-26.135-68.439c-2.153-5.637-8.458-8.41-14.055-6.282l-48.069,18.366c-5.628,2.142-8.439,8.433-6.292,14.046L179.314,195.475z"/><path id="XMLID_213_" d="M209.361,257.308c9.109,0,17.309-6.317,19.314-15.569c2.344-10.685-4.435-21.227-15.107-23.564l-41.26-9.016l-5.16-1.132l-10.611-27.771c-0.578-1.554-0.965-3.131-1.261-4.706l-25.452,36.666c0,0.016-0.019,0.031-0.037,0.056l-0.062,0.105c-3.801,5.452-4.336,13.012-2.171,18.52c2.141,5.395,7.603,10.65,14.203,12.094C145.072,243.719,206.095,257.308,209.361,257.308z"/><path id="XMLID_212_" d="M182.869,16.56h14.221v33.092h91.974V16.56h7.553v41.808c0,4.287,3.672,8.283,8.285,8.283c4.576,0,8.28-3.703,8.28-8.283V8.279c0-4.602-3.027-8.279-9.897-8.279H182.869c-6.858,0-9.897,3.678-9.897,8.279C172.972,12.883,176.011,16.56,182.869,16.56z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+          <h2 class="title-font font-medium sm:text-3xl text-2xl text-gray-300/90">8450</h2>
+          <p class="leading-relaxed text-gray-400">دانشجو</p>
+        </div>
+        <div class="w-[130px] sm:w-[150px] my-2 sm:my-3 mx-2 sm:mx-4 py-3 px-5 flex items-center flex-col bg-zinc-900 rounded-lg shadow-xl shadow-black hover:scale-[1.05]">
+          <svg class="svg-color w-20 sm:w-28 my-2 sm:my-3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve"><g><path d="M195.234,357.719L260.313,245l-65.078-112.719H65.078L0,245l65.078,112.719H195.234z M82.76,162.906h94.794L224.95,245l-47.396,82.094H82.76L35.362,245L82.76,162.906z"/><path d="M294.766,0l-65.078,112.718l65.078,112.718h130.156L490,112.718L424.922,0H294.766z M407.241,194.812h-94.794l-47.397-82.093l47.397-82.093h94.794l47.396,82.093L407.241,194.812z"/><path d="M294.766,264.563l-65.078,112.718L294.766,490h130.156L490,377.281l-65.078-112.718H294.766z M407.241,459.375h-94.794l-47.397-82.094l47.397-82.093h94.794l47.396,82.093L407.241,459.375z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+          <h2 class="title-font font-medium sm:text-3xl text-2xl text-gray-300/90">85</h2>
+          <p class="leading-relaxed text-gray-400">رشته تحصیلی</p>
+        </div>
+        <div class="w-[130px] sm:w-[150px] my-2 sm:my-3 mx-2 sm:mx-4 py-3 px-5 flex items-center flex-col bg-zinc-900 rounded-lg shadow-xl shadow-black hover:scale-[1.05]">
+          <svg class="svg-color w-20 sm:w-28 my-2 sm:my-3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve"><g><g><path d="M445.31,11.72c0-6.468-5.248-11.72-11.72-11.72H66.406c-6.472,0-11.72,5.248-11.72,11.72v476.56c0,6.468,5.248,11.72,11.72,11.72h367.188c6.472,0,11.72-5.248,11.72-11.72V11.72H445.31z M89.842,50.78c0-4.312,3.5-7.812,7.812-7.812h304.688c4.312,0,7.812,3.5,7.812,7.812v85.94c0,4.312-3.5,7.812-7.812,7.812H97.654c-4.312,0-7.812-3.5-7.812-7.812V50.78z M306.038,261.716H98.17c-4.312,0-7.812-3.496-7.812-7.812c0-4.312,3.5-7.812,7.812-7.812h207.868c4.312,0,7.812,3.5,7.812,7.812C313.85,258.22,310.35,261.716,306.038,261.716z M313.85,292.968c0,4.316-3.5,7.812-7.812,7.812H98.17c-4.312,0-7.812-3.496-7.812-7.812c0-4.312,3.5-7.812,7.812-7.812h207.868C310.35,285.156,313.85,288.656,313.85,292.968z M306.038,222.656H98.17c-4.312,0-7.812-3.496-7.812-7.812c0-4.312,3.5-7.812,7.812-7.812h207.868c4.312,0,7.812,3.5,7.812,7.812C313.85,219.16,310.35,222.656,306.038,222.656z M306.038,183.592H98.17c-4.312,0-7.812-3.496-7.812-7.812c0-4.312,3.5-7.812,7.812-7.812h207.868c4.312,0,7.812,3.5,7.812,7.812C313.85,180.096,310.35,183.592,306.038,183.592z M222.654,449.22c0,4.312-3.5,7.812-7.812,7.812H97.654c-4.312,0-7.812-3.5-7.812-7.812V332.032c0-4.312,3.5-7.812,7.812-7.812h117.188c4.312,0,7.812,3.5,7.812,7.812V449.22z M403.134,457.032H259.046c-4.312,0-7.812-3.5-7.812-7.812c0-4.316,3.5-7.812,7.812-7.812h144.088c4.316,0,7.812,3.496,7.812,7.812C410.946,453.532,407.45,457.032,403.134,457.032z M251.234,410.156c0-4.316,3.5-7.812,7.812-7.812H403.13c4.316,0,7.812,3.496,7.812,7.812c0,4.312-3.496,7.812-7.812,7.812H259.046C254.734,417.968,251.234,414.468,251.234,410.156z M403.134,378.908H259.046c-4.312,0-7.812-3.5-7.812-7.812c0-4.316,3.5-7.812,7.812-7.812h144.088c4.316,0,7.812,3.496,7.812,7.812C410.946,375.408,407.45,378.908,403.134,378.908z M403.134,339.844H259.046c-4.312,0-7.812-3.5-7.812-7.812c0-4.316,3.5-7.812,7.812-7.812h144.088c4.316,0,7.812,3.496,7.812,7.812C410.946,336.344,407.45,339.844,403.134,339.844z M403.458,300.78h-62.436c-4.316,0-7.812-3.496-7.812-7.812c0-4.312,3.496-7.812,7.812-7.812h62.436c4.316,0,7.812,3.5,7.812,7.812C411.27,297.284,407.774,300.78,403.458,300.78z M403.458,261.72h-62.436c-4.316,0-7.812-3.496-7.812-7.812c0-4.312,3.496-7.812,7.812-7.812h62.436c4.316,0,7.812,3.5,7.812,7.812C411.27,258.224,407.774,261.72,403.458,261.72z M403.458,222.656h-62.436c-4.316,0-7.812-3.496-7.812-7.812c0-4.312,3.496-7.812,7.812-7.812h62.436c4.316,0,7.812,3.5,7.812,7.812C411.27,219.16,407.774,222.656,403.458,222.656z M403.458,183.592h-62.436c-4.316,0-7.812-3.496-7.812-7.812c0-4.312,3.496-7.812,7.812-7.812h62.436c4.316,0,7.812,3.5,7.812,7.812C411.27,180.096,407.774,183.592,403.458,183.592z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+          <h2 class="title-font font-medium sm:text-3xl text-2xl text-gray-300/90">2434</h2>
+          <p class="leading-relaxed text-gray-400">مقاله علمی</p>
+        </div>
+        <div class="w-[130px] sm:w-[150px] my-2 sm:my-3 mx-2 sm:mx-4 py-3 px-5 flex items-center flex-col bg-zinc-900 rounded-lg shadow-xl shadow-black hover:scale-[1.05]">
+          <svg class="svg-color w-20 sm:w-28 my-2 sm:my-3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" 	 viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve"> <g> 	<g> 		<path d="M510.371,184.585l-65.34-113.17l-37.722,21.78l-5.902,3.408c-11.192-10.223-23.448-19.244-36.675-26.986 			c-13.83-8.095-28.338-14.557-43.394-19.345v-6.712V0H190.66v43.559v6.712c-15.057,4.787-29.561,11.25-43.392,19.345 			c-13.227,7.742-25.484,16.764-36.675,26.986l-5.902-3.408l-37.724-21.78L1.628,184.583l37.724,21.78l5.814,3.357 			c-3.316,15.103-4.988,30.574-4.988,46.279c0,15.705,1.671,31.175,4.988,46.279l-5.814,3.357l-37.724,21.78l65.339,113.17 			l37.724-21.78l5.902-3.408c11.192,10.223,23.449,19.244,36.677,26.986c13.83,8.095,28.338,14.557,43.392,19.345v6.712v43.559 			h126.385c-24.28-24.874-39.267-58.859-39.267-96.282c0-13.699,2.017-26.934,5.753-39.434c-8.86,2.027-18.065,3.135-27.532,3.135 			c-68.052,0-123.418-55.365-123.418-123.418S187.948,132.582,256,132.582S379.418,187.948,379.418,256 			c0,9.467-1.108,18.672-3.133,27.532c12.499-3.736,25.735-5.753,39.433-5.753c19.012,0,37.138,3.867,53.633,10.855 			c1.633-10.734,2.473-21.624,2.473-32.635c0-15.704-1.671-31.175-4.988-46.28l5.812-3.356L510.371,184.585z"/> 	</g> </g> <g> 	<g> 		<path d="M256,176.142c-44.034,0-79.858,35.825-79.858,79.858s35.823,79.858,79.858,79.858c44.034,0,79.858-35.825,79.858-79.858 			S300.034,176.142,256,176.142z"/> 	</g> </g> <g> 	<g> 		<path d="M415.717,321.339c-52.04,0-94.378,42.338-94.378,94.378c0,52.04,42.338,94.378,94.378,94.378 			c52.04,0,94.378-42.338,94.378-94.378C510.095,363.677,467.756,321.339,415.717,321.339z M405.553,469.749l-44.439-44.439 			l30.801-30.801l13.64,13.638l42.679-42.678l30.801,30.801L405.553,469.749z"/> 	</g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg> 
+          <h2 class="title-font font-medium sm:text-3xl text-2xl text-gray-300/90">561</h2>
+          <p class="leading-relaxed text-gray-400">اختراعات</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+     
+  <div class="text-gray-600 body-font relative">
+    <div class="container px-5 pt-20 pb-8 mx-auto flex sm:flex-nowrap flex-wrap">
+      <div class="font-[vazir] md:w-1/2 bg-zinc-900 shadow-lg shadow-black rounded-lg flex flex-col md:ml-auto w-full p-4 md:mr-8" dir="rtl">
+
+        <div class="w-fit flex flex-col text-gray-300 text-sm mt-3">
+          <span class="text-gray-200 text-lg font-bold border-b-2 border-gray-300 mb-2">پیوند های مفید</span>
+          <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; پایگاه اطلاع رسانی دفتر حفظ و نشر آثار حضرت آیت الله العظمی سید علی خامنه ای</a>
+          <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; نهاد مقام معظم رهبری در دانشگاه ها</a>
+          <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; پایگاه اطلاع‌رسانی ریاست‌جمهوری اسلامی ایران</a>
+          <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; وزارت علوم، تحقیقات و فناوری</a>
+          <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; سامانه مدیریت ارتباطات مستمر وزارت علوم، تحقیقات و فناوری</a>
+          <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; سامانه دریافت شکایات و گزارش تخلفات وزارت علوم، تحقیقات و فناوری</a>
+          <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; پایگاه معاونت برنامه ریزی و نظارت راهبردی رئیس جمهور</a>
+          <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; پارک علم و فناوری استان همدان</a>
+          <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; پایگاه اداره کل تحول اداری و فناوری اطلاعات وزارت علوم، تحقیقات و فناوری</a>
+          <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; صندوق رفاه دانشجویی دانشگاه ملایر</a>
+          <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; صندوق رفاه دانشجویان وزارت علوم، تحقیقات و فناوری</a>
+        </div>
+        
+        <div class="flex  flex-col md:flex-row justify-between items-start sm:items-center mt-3">
+          <div class="w-fit flex flex-col text-gray-300 text-sm whitespace-nowrap">
+            <span class="text-gray-200 text-lg font-bold border-b-2 border-gray-300 mb-2">دسترسی سریع</span>
+            <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; ارتباط با ما</a>
+            <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; ارتباط با رئیس دانشگاه</a>
+            <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; درباره ما</a>
+            <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; ساختار دانشگاه</a>
+            <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; اخبار دانشگاه</a>
+            <a href="#" class="hover:text-indigo-500 py-[1px]">&#9672; پست الکترونیک</a>
+          </div>
+
+          <div class="h-5/12 m-5">
+            <img class="inline m-2 rounded-lg p-2" style="filter: drop-shadow(0 0 0.75rem #4338ca);" src="https://malayeru.ac.ir/portal/home/?contactpicture/116314/fix" alt="">
+            <img class="inline m-2 bg-gray-300 rounded-lg" src="assets/picture/nemad.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="md:w-1/2 bg-zinc-900 shadow-lg shadow-black rounded-lg overflow-hidden mt-8 md:mt-0 p-10 flex items-end justify-start relative">
+        <iframe class="absolute inset-0 border-0" style="filter: grayscale(0.5) contrast(1) opacity(1);" title="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3297.385394902778!2d48.852051!3d34.2642233!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1658901514142!5m2!1sen!2s" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="bg-zinc-900 text-gray-300 relative w-full flex flex-wrap py-6 rounded-lg shadow-lg shadow-black font-[vazir]"  dir="rtl">
+          <div class="lg:w-1/2 px-6">
+            <h2 class="title-font font-semibold text-gray-200 tracking-widest text-xs">آدرس</h2>
+            <a class="leading-relaxed ">ملایر، کیلومتر 4 جاده ملایر-اراک</a>
+            <h2 class="title-font font-semibold text-gray-200 tracking-widest text-xs mt-4">کد پستی</h2>
+            <p class="leading-relaxed">65741-84621</p>
+          </div>
+          <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+            <h2 class="title-font font-semibold text-gray-200 tracking-widest text-xs">تلفن (<a href="#Phone-Help" class="text-indigo-500">راهنمای تلفن</a>)</h2>
+            <a class="leading-relaxed auto-align">(+98 81)32456518</a>
+            <h2 class="title-font font-semibold text-gray-200 tracking-widest text-xs mt-4">ایمیل</h2>
+            <p class="text-indigo-500 leading-relaxed">pr@malayeru.ac.ir</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+    
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-2 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-200/70" href="https://SaeedGolestani.ir">
+        <img class="w-10 opacity-70" src="assets/picture/DevLogo.png" alt="">
+        <span class="ml-2 text-lg">Saeed Golestani</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-400 sm:py-2 sm:mt-0 mt-2">© 2022 Malayer University —
+        <a href="https://portal.sigma.ir/" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">Sigma enterprise portal</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start text-xl text-gray-500 ">
+        <a class="hover:text-blue-500" href="https://t.me/F09F9695">
+          <i class="fab fa-telegram-plane"></i>
+        </a>
+        <a class="ml-3 hover:text-rose-500" href="https://www.instagram.com/F09F9695">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="ml-3 hover:text-sky-500" href="https://twitter.com/F09F9695">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="ml-3 hover:text-green-500" href="https://wa.me/989217013411">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </span>
+    </div>
+  </footer>
+    
+
+
+
+  <!-- <div class="relative fun-animate block z-[2] h-fit rounded-xl rotate-45 overflow-hidden bg-zinc-900" style="box-shadow:inset 0 0 18px 2px #000000cc; padding: 8px;">
+  </div> -->
+  <!-- <div class="rt-animate-1 opacity-20 z-10 absolute -translate-y-2/4 translate-x-[20px] top-1/2 w-[250px] h-[250px] hidden">
+    <span class="rt-logo-1"></span>
+    <span class="rt-logo-2"></span>
+    <span class="rt-logo-3"></span>
+    <span class="rt-logo-4"></span>
+    <span class="rt-logo-5"></span>
+    <span class="rt-logo-6"></span>
+    <span class="rt-logo-7"></span>
+  </div> -->
+  <!-- <div id="particles-js" class="bottom-5 z-10 bg-zinc-900 opacity-70 h-36 w-[120vw] ml-[-10vw]" style="box-shadow: inset 0 0 15px 5px #000000aa;"></div> -->
+
+
+  
+
+
+
+  <div id="imgFullPage" onclick="this.style.display='none';">
+  </div>
+
+  <script src="assets/js/particles.min.js"></script>
+  <script>
+    linksMenu = document.getElementById('linksMenu');
+
+    function openLinksMenu()
+    {
+      linksMenu.style.transform = "translateX(0)";
+    }
+    function closeLinksMenu()
+    {
+      linksMenu.style.transform = "translateX(100%)";
+    }
+
+    var toggler = document.getElementsByClassName("tv-caret");
+    var i;
+
+    for (i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function() {
+            this.parentElement.querySelector(".tv-nested").classList.toggle("tv-active");
+            this.classList.toggle("tv-active");
+            this.querySelector(".ham").classList.toggle("tv-active");
+        });
+    }
+    
+    function fullScreenImg(e) {
+      let imgFullPage = document.querySelector('#imgFullPage');
+      imgFullPage.style.backgroundImage = 'url(' + e.src + ')';
+      imgFullPage.style.display = 'block';
+    }
+    imgs = document.querySelectorAll("img");
+    imgs.forEach((e)=>{
+      if(e.getAttribute('zoomImg') != 'disable')
+      {
+        e.addEventListener("click", () => {
+          fullScreenImg(e);
+        });
+      }
+    })
+
+    // -- Set header height in position fixed -- //
+    header_Y = document.getElementById('header').offsetHeight;
+    document.body.style.paddingTop = header_Y + 30 + 'px';
+    resize_count = 0;
+    window.addEventListener('resize', () => {
+      document.body.style.paddingTop = document.getElementById('header').offsetHeight + 30 + 'px';
+      resize_count++;
+      if(resize_count >= 20)
+      {
+        resize_count = 0;
+        alert('What are you doing ?\nDon\'t resize, this is responsive =/');
+      }
+    }, true);
+
+    prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("header").style.transform = "translateY(0)";
+      } else if(currentScrollPos > header_Y-30) {
+        document.getElementById("header").style.transform = "translateY(-100%)";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+
+    // -- Load particles -- //
+    particlesJS.load('particles-js', 'assets/js/particles.json', function() {});
+
+
+    // -- Scroll left for scrollContainer -- //
+    scrollContainer = document.querySelectorAll(".scroll-container");
+    scrollContainer.forEach((e)=>{
+      e.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        e.scrollLeft += evt.deltaY * (-1) / 2.5;
+      });
+    })
+
+
+    // -- Show on scroll animation -- //
+    SOSAS = document.querySelectorAll('.SOSA')
+    SOSASL = SOSAS.length;
+    window.addEventListener('scroll', HandleScrollingOption);
+    function HandleScrollingOption() {
+      SOSAS.forEach((e, i) => {
+        if (e.a != 1) {
+          var bottom_of_object = e.offsetTop;
+          var bottom_of_window = window.scrollY + screen.height / 100 * 50;
+          if (bottom_of_window > bottom_of_object) {
+            e.style.opacity = '1';
+            e.style.transform = 'scale(1)';
+            e.a = 1;
+            if (SOSASL == i + 1)
+              window.removeEventListener("scroll", HandleScrollingOption);
+          }
+        }
+      })
+    }
+
+
+    // -- Image Slider -- //
+
+    imagesSlider = document.querySelectorAll('#imageSlider img');
+    imagesSlider.forEach((v, k)=>{
+      if(k == 0)
+      {
+        v.style.position = 'relative';
+      }
+      else
+      {
+        v.style.position = 'absolute';
+        v.style.top = '0';
+      }
+    });
+    imagesSlider_index = -1;
+    imagesSlider_can=true;
+    sliderRun(1)
+    setInterval(() => {
+      sliderRun(1)
+    }, 7000);
+    function sliderRun(n)
+    {
+      if(imagesSlider_can)
+      {
+        imagesSlider_can=false;
+        if(imagesSlider_index != -1)
+          imagesSlider_current.style.opacity = 0;
+        if(imagesSlider_index+n >= imagesSlider.length)
+          imagesSlider_index=0;
+        else if(imagesSlider_index+n < 0)
+          imagesSlider_index=imagesSlider.length-1;
+        else
+          imagesSlider_index+=n;
+        imagesSlider_current = imagesSlider[imagesSlider_index];
+        imagesSlider_current.style.opacity = 1;
+        setTimeout(()=>{imagesSlider_can=true;}, 1000);
+      }
+    }
+    imageSlider = document.querySelector('#imageSlider');
+    imageSlider.addEventListener('click', (e)=>{
+      if(imageSlider.offsetWidth/2 < e.layerX)
+        sliderRun(1);
+      else
+        sliderRun(-1);
+    });
+
+
+    // -- Tools functions -- //
+    function rootc(c) {
+      document.documentElement.style.setProperty('--logoA-color', c);
+      document.documentElement.style.setProperty('--logoA-border', c);
+    }
+    function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    element = document.querySelector('.fun-animate');
+    for(i=1;i<=10;i++)
+    {
+      for(ii=1;ii<=10;ii++)
+      {
+        span = document.createElement('span');
+        span.style.animation = "fun-animate 2s linear " + getRandomInt(0, 40)/10 + "s infinite";
+        element.appendChild(span);
+      }
+      br = document.createElement('br');
+      element.appendChild(br);
+    }
+    
+  </script>
+</body>
+
+</html>
